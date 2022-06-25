@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>TREPADORES QUINDIO</title>
+    <link rel="shortcut icon" href="./images/TQ.jpg"/>
+    <!-- Enlazando el CSS con el html -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Estamos implementando una fuente externa desde google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Lato:wght@400;700&family=Merriweather:ital,wght@0,700;1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Encabezado con menu de navegación de la página -->
+    <header class="header">
+        <!-- Div que contiene el logo y las opciones del menu de navegación de la página -->
+        <div class="header__content">
+            <a href="./index.html" class="content__logo">
+                <img src="./images/tqnegrojpg.jpg" alt="logo"/>
+            </a>
+            <nav>
+                <!-- Listado de los items a incluir en la barra de navegación -->
+                <ul class="content__navbar">
+                    <li><a href="./index.html">INICIO</a></li>
+                    <li><a href="./pages/video.html">VIDEOS</a></li>
+                    <li><a href="./pages/stadings.html">RESULTADOS</a></li>
+                    <li><a href="./pages/drivers.html">PILOTOS</a></li>
+                    <li><a href="./pages/regulation.html">REGLAMENTO</a></li>
+                    <li><a href="./pages/registration.html">INSCRIPCIONES</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Esta seccion contiene la información de la fecha, lugar y una pequeña imagén de la pista del
+        evento, ademas de el conteo regresivo para el inicio del evento. -->
+        <section class="countdown">
+            <div class="countdown__container">
+                <div class="container__row">
+                    <div class="container_col">
+                        <div class="race-title">
+                            <div class="race-status">
+                                <span class="race__status__date">11 - 12 Junio</span>
+                            </div>
+                            <div class="race__info">
+                                <div class="race__circuit__image">
+                                    <img class="circuit-image" src="./images/pista.png" alt="pista">
+                                </div>
+                                <div class="race__info__text">
+                                    <a href=""></a>
+                                    <div class="race_text">
+                                        <span class="race_name">La Linea 2022</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Div que contiene la información para realizar el conteo regresivo -->
+                    <div class="container__col2">
+                        <div class="countdown__clock__wraper">
+                            <div class="countdown__clock">
+                                <div class="clock">
+                                    <div class="clock__date">
+                                        <p>04</p>
+                                        <span>Dias</span>
+                                    </div>
+                                    <div class="clock__date">
+                                        <p>12</p>
+                                        <span>Horas</span>
+                                    </div>
+                                    <div class="clock__date">
+                                        <p>30</p>
+                                        <span>Min</span>
+                                    </div>
+                                    <div class="clock__date">
+                                        <p>22</p>
+                                        <span>Segs</span>
+                                    </div>
+                                    <div class="Clock__date">
+                                        <img class="clock__logo" src="./images/motul.jpg" alt="logoMotul">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>  
+        </section>
+        <!-- En este div se mostrarán imágenes aleatorias de los diferentes autos y eventos realizados  -->
+            <div class="images__autos">
+                <img src="./images/Linea.jpeg" alt="ferrari"/>
+            </div>
+        <br/>
+        <!-- En esta sección se mostrará en orden cronológico información de la ciudad y fecha donde estan
+        programados las diferentes validas del campeonato -->
+
+        <section class="races">
+            <div class="races__calendar">
+                <div class="races__list">
+                    <div class="etapa">
+                        <div class="etapa_city">
+                            <div class="flag">
+                                <img src="./images/espana.png" class="esp_images"alt="">
+                            </div>
+                            <span class="name">España</span>
+                        </div>
+                        <span class="race-date-short">
+                            <time class="date">20</time>
+                            <time class="month">Abril</time>
+                        </span>
+                    </div>
+                    <div class="etapa">
+                        <div class="etapa_city">
+                            <div class="flag">
+                                <img src="./images/francia.png" class="fra_images"alt="">
+                            </div>
+                            <span class="name">España</span>
+                        </div>
+                        <span class="race-date-short">
+                            <time class="date">20</time>
+                            <time class="month">Mayo</time>
+                        </span>
+                    </div>
+                    <div class="etapa">
+                        <div class="etapa_city">
+                            <div class="flag">
+                                <img src="./images/espana.png" class="fra_images"alt="">
+                            </div>
+                            <span class="name">España</span>
+                        </div>
+                        <span class="race-date-short">
+                            <time class="date">20</time>
+                            <time class="month">Junio</time>
+                        </span>
+                    </div>
+                    <div class="etapa">
+                        <div class="etapa_city">
+                            <div class="flag">
+                                <img src="./images/alemania.png" class="ale_images"alt="">
+                            </div>
+                            <span class="name">España</span>
+                        </div>
+                        <span class="race-date-short">
+                            <time class="date">20</time>
+                            <time class="month">Julio</time>
+                        </span>
+                    </div>
+                    <div class="etapa">
+                        <div class="etapa_city">
+                            <div class="flag">
+                                <img src="./images/francia.png" class="esp_images"alt="">
+                            </div>
+                            <span class="name">Francia</span>
+                        </div>
+                        <span class="race-date-short">
+                            <time class="date">20</time>
+                            <time class="month">Agosto</time>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+       
+        
+        <!-- En esta seccion se incluye noticias de los acontencimientos antes, durante y despues
+             de cada etapa, cada información incluye una imágen -->
+        <section class="news">
+            <div>
+                <img src="./images/revisiont.jpeg" alt="" height="250" width="350"/>
+                <p> El dia sábado 11 de Junio se realizo la revisión <br> técnica de todos los autos participantes en el <br>
+                bonus track de la IV Copa Trepadores</p>
+            </div>
+            <div>
+                <img src="./images/revisiont.jpeg" alt="" height="250" width="350"/>
+                <p> El dia sábado 11 de Junio se realizo la revisión <br> técnica de todos los autos participantes en el <br>
+                bonus track de la IV Copa Trepadores</p>
+            </div>
+            <div>
+                <img src="./images/revisiont.jpeg" alt="" height="250" width="350"/>
+                <p> El dia sábado 11 de Junio se realizo la revisión <br> técnica de todos los autos participantes en el <br>
+                bonus track de la IV Copa Trepadores</p>
+            </div>
+            <div>
+                <img src="./images/revisiont.jpeg" alt="" height="250" width="350"/>
+                <p> El dia sábado 11 de Junio se realizo la revisión <br> técnica de todos los autos participantes en el <br>
+                bonus track de la IV Copa Trepadores</p>
+            </div>
+        </section>
+    </main>
+    <!-- Footer de la página -->
+    <footer class="footer">
+        <!-- div que contiene los logos de los patrocinadores de todos los eventos. -->
+        <div class="footer__sponsors">
+            <div class="container_sponsors">
+                <div class="container__name">
+                    <span>Nuestros Patrocinadores</span>
+                </div>
+                <!-- Logo de cada uno de los patrocinadores -->
+                <div class="sponsors__grid">
+                    <div class="sponsors__tq"> 
+                        <img src="./images/android.png" alt="" />
+                    </div>
+                    <div class="sponsors__tq">
+                        <img src="./images/poderosa.jpg" alt=""/>
+                    </div>
+                    <div class="sponsors__tq">
+                        <img src="./images/apple.png" alt=""/>
+                    </div>
+                    <div class="sponsors__tq"> 
+                        <img src="./images/android.png" alt=""/>
+                    </div>
+                    <div class="sponsors__tq">
+                        <img src="./images/poderosa.jpg" alt=""/>
+                    </div>
+                    <div class="sponsors__tq">
+                        <img src="./images/apple.png" alt=""/>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <!-- Div que contiene el logo y enlace a las cuentas de las redes sociales del Club -->
+        <div class="footer__social">
+            <div class="container">
+                <div class="container__row">
+                    <div class="footer_logo">
+                        <a href="./index.html"><img src="./images/TQ2.jpg" alt="logo" width="134" height="60"/></a>
+                    </div>
+                    <div>
+                        <p class="right">
+                            <span>© 2022</span> 
+                            <span>&nbsp; TREPADORES QUINDIO.</span>
+                            <span> &nbsp; ALL RIGHT RESERVED.</span>
+                        </p>
+                    </div>
+                    <!-- Div que contiene imagenes que permiten linkear con las redes sociales del club -->
+                    <div class="column_3">
+                        <div>
+                            <div class="social_media">
+                                <a href="https://m.facebook.com/trepadoresquindio/" target="_blank">
+                                    <img src="./images/icone-facebook.png" alt="" width="50" height="50"/>
+                                </a>
+                                <a href="https://www.instagram.com/trepadoresquindio/" target="_blank">
+                                    <img src="./images/Instagram_icon.png" alt="" width="50" height="50"/>
+                                </a>
+                                <a href="https://api.whatsapp.com/send?phone=573232293710" target="_blank">
+                                    <img src="./images/whatsapp_icon.png" alt="" width="50" height="50"/>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
