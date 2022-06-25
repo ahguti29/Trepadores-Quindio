@@ -276,9 +276,7 @@ body{
 .footer__social{
     padding: 20px 0 20px;
     text-align: center;
-
 }
-
 .container{
     max-width: 960px;
     width: 100%;
@@ -287,7 +285,6 @@ body{
     margin-right: auto;
     margin-left: auto;
 }
-
 .container__row{
     display: flex;
     margin-bottom: 15px;
@@ -297,7 +294,6 @@ body{
     justify-content: space-between;
     align-items: center;
 }
-
 .container__sponsors{
     display: grid;
     max-width: 960px;
@@ -310,7 +306,6 @@ body{
 .footer_logo{
     padding: 10px 0 15px;
 }
-
 .container__name{
     display: flex;
     flex-wrap: wrap;
@@ -474,8 +469,6 @@ tr{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 50px;
-    /* row-gap: espaciar verticalmente */
-    /* column-gap: horizontalmente */
   }
 
   /* Estilos para la pagina drivers.html */
@@ -505,7 +498,6 @@ tr{
     text-align: center;
     justify-content: space-between;
 }
-
 .info2{
     width: 100%;
     padding-right: 10px;
@@ -526,29 +518,24 @@ tr{
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     gap: 50px;
-    /* row-gap: espaciar verticalmente */
-    /* column-gap: horizontalmente */
   }
-
- 
 
   /* Aplicando estilos grid al footer de patrocinadores */
 
-  .sponsors__grid{
+.sponsors__grid{
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     margin: 10px;
     text-align: center;
-  }
+}
 
-  .sponsors__tq{
+.sponsors__tq{
     width: 200px;
      align-items: center;
-   
-  }
-  footer img{
+}
+footer img{
     width: 60px;
     height: 60px;
-  }
+}
 
   
