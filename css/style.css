@@ -202,6 +202,61 @@ body{
     padding-left: 50px;
     padding-right: 20px;
 }
+/* Aplicando estilos a la seccion news */
+.news{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 25px;
+    justify-content: space-between;
+    margin: 20px;
+    padding: 10px;
+}
+
+ /* Estilo para la seccion de races que contiene información ordenada cronológicamente
+  de cada una de las etapas del campeonato */
+.races__calendar{
+    background-color: #272626;
+    color: white;
+    height: 290px;
+    width: 100%;
+    margin: 20px 0 0;
+    padding: 5px;
+}
+
+.races__list{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center;
+    justify-items: center;
+    margin: 20px 0;
+    height: 190px;
+    padding: 10px 0 0;
+}
+
+.etapa{
+    height: 240px;
+    border-right: solid 2px #38383f;
+    border-bottom-right-radius: 20px;
+    border-bottom: solid 2px #38383f;
+    text-align: center;
+    padding: 20px 90px 20px 90px;
+    margin-right: 5px;
+}
+
+.etapa_city{
+    align-items: center;
+    justify-items: center;
+}
+
+.flag img{
+    display: block;
+    height: 52px;
+    width: 68px;
+    margin: 0 auto 20px;
+    align-items: center;
+    justify-items: center;
+}
 
 .footer{
     color: white;
@@ -254,9 +309,6 @@ body{
 }
 .footer_logo{
     padding: 10px 0 15px;
-}
-.column_3{
-    width: 15%;
 }
 
 .container__name{
@@ -478,51 +530,7 @@ tr{
     /* column-gap: horizontalmente */
   }
 
-  /* Estilo para la seccion de races que contiene información ordenada cronológicamente
-  de cada una de las etapas del campeonato */
-  .races__calendar{
-    background-color: #272626;
-    color: white;
-    height: 290px;
-    width: 100%;
-    margin: 20px 0 0;
-    padding: 5px;
-
-  }
-
-  .races__list{
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    align-items: center;
-    justify-items: center;
-    margin: 20px 0;
-    height: 190px;
-    padding: 10px 0 0;
-  }
-
-  .etapa{
-    height: 240px;
-    border-right: solid 2px #38383f;
-    border-bottom-right-radius: 20px;
-    border-bottom: solid 2px #38383f;
-    text-align: center;
-    padding: 20px 90px 20px 90px;
-    margin-right: 5px;
-  }
-
-  .etapa_city{
-    align-items: center;
-    justify-items: center;
-  }
-
-  .flag img{
-    display: block;
-    height: 52px;
-    width: 68px;
-    margin: 0 auto 20px;
-    align-items: center;
-    justify-items: center;
-  }
+ 
 
   /* Aplicando estilos grid al footer de patrocinadores */
 
@@ -541,17 +549,6 @@ tr{
   footer img{
     width: 60px;
     height: 60px;
-  }
-
-  /* Aplicando estilos a la seccion news */
-  .news{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 25px;
-    justify-content: space-between;
-    margin: 20px;
-    padding: 10px;
   }
 
   
