@@ -579,7 +579,5 @@ footer img{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 50px;
-    /* row-gap: espaciar verticalmente */
-    /* column-gap: horizontalmente */
   }
   
