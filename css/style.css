@@ -581,3 +581,36 @@ footer img{
     gap: 50px;
   }
   
+  @media (max-width: 960px) {
+    .news {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .races__list{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .sponsors__grid{
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .pilots__grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+  }
+
+  @media (max-width: 680px) {
+    .news {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .races__list{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .sponsors__grid{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .pilots__grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+    }
+  }
