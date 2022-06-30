@@ -574,7 +574,10 @@ footer img{
     margin-bottom: 20px;
     text-align: center;
   }
-  
+  .cap__patrocinador{
+    display: flex;
+    text-align: center;
+  }
   .articles__grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -582,7 +585,7 @@ footer img{
     gap: 50px;
   } 
   
-  @media (max-width: 960px) {
+  @media (max-width: 940px) {
     .news {
       grid-template-columns: repeat(2, 1fr);
     }
@@ -597,9 +600,12 @@ footer img{
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(4, 1fr);
     }
+    .articles__grid{
+        grid-template-columns: repeat(2,1fr);
+    }
   }
 
-  @media (max-width: 680px) {
+  @media (max-width: 660px) {
     .news {
       grid-template-columns: repeat(2, 1fr);
     }
@@ -614,4 +620,8 @@ footer img{
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(5, 1fr);
     }
+    .articles__grid{
+        grid-template-columns: 1fr;
+    }
+  
   }
