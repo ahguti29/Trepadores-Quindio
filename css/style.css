@@ -21,47 +21,11 @@ body{
     background-color: rgb(214, 214, 214);
 }
 
-.header {
+.headerpag {
     color: white;
-	background-color: #343434;
-    padding: 20px 10px;
-    position: sticky;
-    top: 0;
+	background-color: #353535;
     z-index: 2;
 }
-
-.header__content{
-    display: flex;
-    justify-content: space-between;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.content__logo img{
-    width: 100%;
-    border-radius: 10px;
-    width: 170px;
-    height: 60px;
-}
-.content__navbar li a:hover{
-    background-color: rgb(77, 77, 1);
-}
-.content__navbar{
-    display: flex;
-}
-
-.content__navbar li{
-    margin: 20px;
-}
-
-.content__navbar li a{
-    color: rgb(224, 221, 221);
-    font-weight: bold;
-    font-size: large;
-    justify-items: center;
-    align-items: center;
-}
-
 .countdown{
     background-color: rgb(124, 39, 56);
     padding: 10px;
