@@ -40,14 +40,6 @@ body{
     margin-right: 20px;
     font-family: 'Merriweather-Bold';
 }
-
-.container__row{
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: -10px;
-    margin-left: -10px;
-}
-
 .race__status__date{
     margin: 0;
     line-height: 15px;
@@ -64,10 +56,7 @@ body{
     margin-bottom: 0;
     height: 100%;
 }
-.container_col{
-    flex: 0 0 58.33%;
-    max-width: 58.33%;
-}
+
 .race__info{
     display: flex;
 }
@@ -207,30 +196,20 @@ body{
 .races__calendar{
     background-color: #272626;
     color: white;
-    height: 290px;
-    width: 100%;
-    margin: 20px 0 0;
+    height: 100%;
     padding: 5px;
 }
 
 .races__list{
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
     align-items: center;
     justify-items: center;
-    margin: 20px 0;
-    height: 190px;
-    padding: 10px 0 0;
+    color: #353535;
+    width: 100%;
 }
 
 .etapa{
-    height: 240px;
-    border-right: solid 2px #38383f;
-    border-bottom-right-radius: 20px;
-    border-bottom: solid 2px #38383f;
     text-align: center;
-    padding: 20px 90px 20px 90px;
-    margin-right: 5px;
+    width: 100%;
 }
 
 .etapa_city{

@@ -23,8 +23,8 @@
 <body>
     <!-- Encabezado con menu de navegación de la página -->
 
-    <header class="sticky-top">
-        <nav class="navbar navbar-expand-md navbar-dark headerpag  ">
+    <header class="sticky-top ">
+        <nav class="navbar navbar-expand-md navbar-dark headerpag">
           <!-- <nav class="navbar navbar-expand-md bg-red"> -->
           <div class="container">
             <a class="navbar-brand" href="./index.html">
@@ -73,10 +73,10 @@
         <!-- Esta seccion contiene la información de la fecha, lugar y una pequeña imagén de la pista del
         evento, ademas de el conteo regresivo para el inicio del evento. -->
         <section class="countdown">
-            <div class="countdown__container">
-                <div class="container__row">
-                    <div class="container_col">
-                        <div class="race-title">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-7" p-3>
+                        <div class="race-title fw-semibold">
                             <div class="race-status">
                                 <span class="race__status__date">11 - 12 Junio</span>
                             </div>
@@ -94,10 +94,10 @@
                         </div>
                     </div>
                     <!-- Div que contiene la información para realizar el conteo regresivo -->
-                    <div class="container__col2">
+                    <div class="col-sm-12 col-md-6 col-lg-5 p-2 sticky-top container__col2">
                         <div class="countdown__clock__wraper">
                             <div class="countdown__clock">
-                                <div class="clock">
+                                <div class="clock fs-5 fw-semibold">
                                     <div class="clock__date">
                                         <p>04</p>
                                         <span>Dias</span>
@@ -138,75 +138,92 @@
         </section>
         <!-- En esta sección se mostrará en orden cronológico información de la ciudad y fecha donde estan
         programados las diferentes validas del campeonato -->
-
-        <section class="races">
-            <div class="races__calendar">
-                <div class="races__list">
-                    <div class="etapa">
-                        <div class="etapa_city">
-                            <div class="flag">
-                                <img src="./images/espana.png" class="esp_images"alt="">
-                            </div>
-                            <span class="name">España</span>
+        <section class="p-3">
+            <div class="row races__calendar">
+                <div class="col-sm-4 col-md-3 col-lg-2 races__list">
+                  <div class="card etapa bg-dark bg-gradient text-white">
+                    <div class="card-body etapa_city">
+                        <div class="flag">
+                            <img src="./images/alemania.png" class="ale_images"alt="">
                         </div>
-                        <span class="race-date-short">
-                            <time class="date">20</time>
-                            <time class="month">Abril</time>
-                        </span>
+                        <span class="name">España</span>
                     </div>
-                    <div class="etapa">
-                        <div class="etapa_city">
-                            <div class="flag">
-                                <img src="./images/francia.png" class="fra_images"alt="">
-                            </div>
-                            <span class="name">España</span>
-                        </div>
-                        <span class="race-date-short">
-                            <time class="date">20</time>
-                            <time class="month">Mayo</time>
-                        </span>
-                    </div>
-                    <div class="etapa">
-                        <div class="etapa_city">
-                            <div class="flag">
-                                <img src="./images/espana.png" class="fra_images"alt="">
-                            </div>
-                            <span class="name">España</span>
-                        </div>
-                        <span class="race-date-short">
-                            <time class="date">20</time>
-                            <time class="month">Junio</time>
-                        </span>
-                    </div>
-                    <div class="etapa">
-                        <div class="etapa_city">
-                            <div class="flag">
-                                <img src="./images/alemania.png" class="ale_images"alt="">
-                            </div>
-                            <span class="name">España</span>
-                        </div>
-                        <span class="race-date-short">
-                            <time class="date">20</time>
-                            <time class="month">Julio</time>
-                        </span>
-                    </div>
-                    <div class="etapa">
-                        <div class="etapa_city">
-                            <div class="flag">
-                                <img src="./images/francia.png" class="esp_images"alt="">
-                            </div>
-                            <span class="name">Francia</span>
-                        </div>
-                        <span class="race-date-short">
-                            <time class="date">20</time>
-                            <time class="month">Agosto</time>
-                        </span>
+                    <span>
+                        <time>20</time>
+                        <time>Julio</time>
+                    </span>
+                  </div>
+                </div>
+                <div class="col-sm-4 col-md-3 col-lg-2 races__list">
+                    <div class="card etapa bg-dark bg-gradient text-white">
+                      <div class="card-body etapa_city">
+                          <div class="flag">
+                              <img src="./images/espana.png" class="esp_images"alt="">
+                          </div>
+                          <span class="name">España</span>
+                      </div>
+                      <span>
+                          <time>20</time>
+                          <time>Julio</time>
+                      </span>
                     </div>
                 </div>
-            </div>
+                <div class="col-sm-4 col-md-3 col-lg-2 races__list">
+                    <div class="card etapa bg-dark bg-gradient text-white">
+                      <div class="card-body etapa_city">
+                          <div class="flag">
+                              <img src="./images/francia.png" class="fra_images"alt="">
+                          </div>
+                          <span class="name">España</span>
+                      </div>
+                      <span>
+                          <time>20</time>
+                          <time>Julio</time>
+                      </span>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-3 col-lg-2 races__list">
+                    <div class="card etapa bg-dark bg-gradient text-white">
+                      <div class="card-body etapa_city">
+                          <div class="flag">
+                              <img src="./images/alemania.png" class="ale_images"alt="">
+                          </div>
+                          <span class="name">España</span>
+                      </div>
+                      <span>20</time>
+                          <time>Julio</time>
+                      </span>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-3 col-lg-2 races__list">
+                    <div class="card etapa bg-dark bg-gradient text-white">
+                      <div class="card-body etapa_city">
+                          <div class="flag">
+                              <img src="./images/alemania.png" class="ale_images"alt="">
+                          </div>
+                          <span class="name">España</span>
+                      </div>
+                      <span>
+                          <time>20</time>
+                          <time>Julio</time>
+                      </span>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-3 col-lg-2 races__list">
+                    <div class="card etapa bg-dark bg-gradient text-white">
+                      <div class="card-body etapa_city">
+                          <div class="flag">
+                              <img src="./images/alemania.png" class="ale_images"alt="">
+                          </div>
+                          <span class="name">España</span>
+                      </div>
+                      <span>
+                          <time>20</time>
+                          <time>Julio</time>
+                      </span>
+                    </div>
+                </div>
         </section>
-       
-        
         <!-- En esta seccion se incluye noticias de los acontencimientos antes, durante y despues
              de cada etapa, cada información incluye una imágen -->
         <section class="news">
