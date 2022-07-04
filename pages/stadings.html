@@ -56,13 +56,17 @@
                     <a class="nav-link" href="../pages/registration.html">INSCRIPCIONES</a>
                 </li>
               </ul>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2 ms-2" type="search" placeholder="Buscar" aria-label="Search">
+                <button type="button" class="btn btn-outline-warning" type="submit">Buscar</button>
+              </form>
             </div>
           </div>
         </nav>
     </header>
 
     <main>
-        <section>
+        <section class="container">
             <div class="title">
                 <h1> <p>Bonus Track La Linea 2022 <br>
                         Resultados de Etapa <br></p> 
@@ -75,8 +79,10 @@
                     <option value="Pijao">Pijao 2022</option>
                 </select>
             </div>
-            <div class="results">
-                <div class="results__list">
+            <!-- Div que contiene cada el listado de las categorias del campeonato y que permite verificar 
+                el resultado de cada categoria -->
+            <div class="d-flex">
+                <div class="w-25">
                     <ul class="list__categories">
                         <li class="categories__car">Categoria TQ1</li>
                         <li class="categories__car2">Categoria TQ2</li>
@@ -90,23 +96,23 @@
                         <li class="categories__car2">Categoria GTS2</li>
                     </ul>
                 </div>
-                <div class="results__table">
-                    <table class="table__tq">
-                        <!--Cabecera de la tabla-->
+                <!-- Div que contiene la tabla de resultados de cada valida -->
+                <div class="container">
+                    <table class="table table-striped table-hover text-center">
+                        <!-- Cabecera de la tabla de resultados -->
                         <thead>
-                            <tr>
-                                <th>Posición</th>
-                                <th>N°</th>
-                                <th>Piloto</th>
-                                <th>Carro</th>
-                                <th>Tiempo</th>
-                                <th>Pts</th>
-                            </tr>
+                          <tr>
+                            <th scope="col">Posición</th>
+                            <th scope="col">N°</th>
+                            <th scope="col">Piloto</th>
+                            <th scope="col">Carro</th>
+                            <th scope="col">Tiempo</th>
+                            <th scope="col">Pts</th>
+                          </tr>
                         </thead>
-                        <!--Definir el contenido principal-->
                         <tbody>
                             <tr>
-                                <td>1</td>
+                                <th scope="row">1</th>
                                 <td>23</td>
                                 <td>Andres Perez</td>
                                 <td>BMW 135i</td>
@@ -114,7 +120,7 @@
                                 <td>30</td>
                             </tr>
                             <tr>
-                                <td>2</td>
+                                <th scope="row">2</th>
                                 <td>456</td>
                                 <td>Pedro Gomez</td>
                                 <td>Audi A4</td>
@@ -122,15 +128,15 @@
                                 <td>20</td>
                             </tr>
                             <tr>
-                                <td>3</td>
+                                <th scope="row">3</th>
                                 <td>23</td>
-                                <td>Andres</td>
+                                <td>Andres Rivas</td>
                                 <td>Audi A3</td>
                                 <td>02:41:750</td>
                                 <td>10</td>
                             </tr>
                             <tr>
-                                <td>4</td>
+                                <th scope="row">4</th>
                                 <td>88</td>
                                 <td>Jose Gomez</td>
                                 <td>Audi A4</td>
@@ -138,31 +144,47 @@
                                 <td>10</td>
                             </tr>
                             <tr>
-                                <td>5</td>
+                                <th scope="row">5</th>
                                 <td>88</td>
-                                <td>Jose Gomez</td>
+                                <td>Francisco Perez</td>
                                 <td>Audi A4</td>
                                 <td>02:37:750</td>
                                 <td>10</td>
                             </tr>
                             <tr>
-                                <td>6</td>
+                                <th scope="row">6</th>
                                 <td>88</td>
-                                <td>Jose Gomez</td>
+                                <td>Pablo Rodriguez</td>
                                 <td>Audi A4</td>
                                 <td>02:37:750</td>
                                 <td>10</td>
                             </tr>
                             <tr>
-                                <td>7</td>
+                                <th scope="row">7</th>
                                 <td>88</td>
-                                <td>Jose Gomez</td>
-                                <td>Audi A4</td>
-                                <td>02:37:750</td>
+                                <td>Cristian Lara</td>
+                                <td>Audi A3</td>
+                                <td>02:38:350</td>
+                                <td>10</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">8</th>
+                                <td>88</td>
+                                <td>Jairo Gutierrez</td>
+                                <td>BMW 240i</td>
+                                <td>02:38:750</td>
+                                <td>10</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">9</th>
+                                <td>88</td>
+                                <td>Andres Huertas</td>
+                                <td>Seat Leon</td>
+                                <td>02:40:750</td>
                                 <td>10</td>
                             </tr>
                         </tbody>
-                    </table>
+                      </table>
                 </div>
             </div>
         </section>
