@@ -26,6 +26,10 @@ body{
 	background-color: #353535;
     z-index: 2;
 }
+
+.navbar-nav li a{
+    font-size: medium;
+}
 .countdown{
     background-color: rgb(124, 39, 56);
     padding: 10px;
@@ -40,6 +44,7 @@ body{
     margin-right: 20px;
     font-family: 'Merriweather-Bold';
 }
+
 .race__status__date{
     margin: 0;
     line-height: 15px;
@@ -137,9 +142,10 @@ body{
 }
 
 .clock__logo{
-    width: 70px;
+    width: 80px;
     margin-left: 5px;
-    height: 50px;
+    height: 60px;
+    margin-top: 5px;
 }
 
 /* Transiciones de imagenes en el index */
@@ -178,19 +184,6 @@ body{
     75%{margin-left: -300%;}
     100%{margin-left: -300%;}
     }
-    
-
-/* Aplicando estilos a la seccion news */
-.news{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 25px;
-    justify-content: space-between;
-    margin: 20px;
-    padding: 10px;
-}
-
  /* Estilo para la seccion de races que contiene información ordenada cronológicamente
   de cada una de las etapas del campeonato */
 .races__calendar{
@@ -204,7 +197,6 @@ body{
     align-items: center;
     justify-items: center;
     color: #353535;
-    width: 100%;
 }
 
 .etapa{
@@ -245,13 +237,15 @@ body{
     padding: 20px 0 20px;
     text-align: center;
 }
-.container{
-    max-width: 960px;
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
+.footer__grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+}
+
+.footer__grid-reserved{
+    text-align: center;
+    padding-top: 20px;
 }
 .container__row{
     display: flex;
@@ -263,7 +257,6 @@ body{
     align-items: center;
 }
 .container__sponsors{
-    display: grid;
     max-width: 960px;
     width: 100%;
     padding-right: 15px;
@@ -480,13 +473,35 @@ tr{
 
 .sponsors__tq{
     width: 200px;
-     align-items: center;
+    align-items: center;
 }
 footer img{
     width: 60px;
     height: 60px;
 }
+.footer_logo a img{
+    width: 100px;
+    height: 50px;
+}
+.footer__rrss{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+}
+  
+.footer__rrss a{
+    color: #e2e8f0;
+    font-size: 30px;
+  }
 
+.footer__rrss a:hover{
+    color: #13a31a;
+    transition: color 0.3s;
+  }
+
+.chat a:hover {
+    transform: rotate(5deg);
+}
 /* Aplicando estilos al html regulations */
 .capitules {
     background-color: #fff;
@@ -533,39 +548,64 @@ footer img{
     grid-template-rows: repeat(3, 0.5fr);
     gap: 50px;
   } 
-  
-  @media (max-width: 768px) {
-    .news {
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .races__list{
+
+  @media (max-width: 1200px){
+    .sponsors__grid{
         grid-template-columns: repeat(6, 1fr);
     }
+    /* .container__sponsors{
+        max-width: 1200px;
+        width: 100%;
+    } */
+  }
+
+  @media (max-width: 992px){
+    .sponsors__grid{
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .container__sponsors{
+        max-width: 960px;
+        width: 100%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    /* .news {
+      grid-template-columns: repeat(2, 1fr);
+    } */
+    /* .races__list{
+        grid-template-columns: repeat(6, 1fr);
+    } */
 
     .sponsors__grid{
         grid-template-columns: repeat(3, 1fr);
-    }
-    .pilots__grid {
+     }
+    /* .pilots__grid {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(4, 1fr);
     }
     .articles__grid{
         grid-template-columns: repeat(2,1fr);
+    } 
+   */
     }
-  }
 
   @media (max-width: 576px) {
-    .news {
+    /* .news {
       grid-template-columns: repeat(2, 1fr);
-    }
-    .races__list{
+    } */
+    /* .races__list{
         grid-template-columns: repeat(2, 1fr);
-    }
+    } */
     .sponsors__grid{
         grid-template-columns: repeat(2, 1fr);
     }
+    .footer__grid{
+        grid-template-columns: 1fr;
+    }
 
-    .footer__social{
+    /* .footer__social{
         grid-template-columns: 1fr
     }
     .pilots__grid {
@@ -574,6 +614,6 @@ footer img{
     }
     .articles__grid{
         grid-template-columns: 1fr;
-    }
+    } */
   
-  }
+    }
