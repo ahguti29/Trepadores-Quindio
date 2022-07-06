@@ -274,14 +274,6 @@ body{
     margin: 5px;
     padding: 5px;
 }
-.social_media{
-    display: flex;
-    margin-bottom: -10px;
-    margin-left: -15px;
-    max-width: 960px;
-    justify-content: space-between;
-}
-
 /* Estilos para la pagina registration.html */
 .container_reg{
     border-radius: 5px;
@@ -335,11 +327,9 @@ h3{
     line-height: 1.214;
 }
 .categories__car{
-    border-left: 3px solid yellow;
+    border-left: 4px solid yellow;
     background: #cac3c3;
-    color: black;
     font-weight: 600;
-    padding: 9px 0 8px 9px;
     cursor: default;
     font-size: 1.2rem;
 }
@@ -463,18 +453,6 @@ tr{
   }
 
   /* Aplicando estilos grid al footer de patrocinadores */
-
-.sponsors__grid{
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    margin: 10px;
-    text-align: center;
-}
-
-.sponsors__tq{
-    width: 200px;
-    align-items: center;
-}
 footer img{
     width: 60px;
     height: 60px;
@@ -581,6 +559,11 @@ footer img{
     .sponsors__grid{
         grid-template-columns: repeat(3, 1fr);
      }
+
+     .footer__grid{
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
     /* .pilots__grid {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(4, 1fr);
@@ -603,6 +586,7 @@ footer img{
     }
     .footer__grid{
         grid-template-columns: 1fr;
+        text-align: center;
     }
 
     /* .footer__social{

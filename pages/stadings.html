@@ -69,33 +69,49 @@
                 </h1> 
                 <label for="etapa">Selección Etapa:</label>
                 <select class="form-select form-select-md" name="etapa" id="etapa">
-                    <option selected>Elegir una opción</option>
+                    <option selected>Elegir una étapa</option>
                     <option value="Calarcá">La Linea 2022</option>
                     <option value="Manizales">Feria de Manizales 2022</option>
                     <option value="Buenavista">Buenavista 2022</option>
                     <option value="Pijao">Pijao 2022</option>
                 </select>
             </div>
+            <div class="row m-5 text-center d-block d-md-none">
+                <label for="etapa">Seleccione categoria:</label>
+                <select class="form-select form-select-md" name="etapa" id="etapa">
+                    <option selected>Elegir una categoria</option>
+                    <option value="TQ1">Categoria TQ1</option>
+                    <option value="TQ2">Categoria TQ2</option>
+                    <option value="TQ3">Categoria TQ3</option>
+                    <option value="TQ4">Categoria TQ4</option>
+                    <option value="TQ5">Categoria TQ5</option>
+                    <option value="TQ6">Categoria TQ6</option>
+                    <option value="TQ7">Categoria TQ7</option>
+                    <option value="TQ8">Categoria TQ8</option>
+                    <option value="TQ9">Categoria TQ9</option>
+                    <option value="GTS2">Categoria GTS2</option>
+                </select>
+            </div>
             <!-- Div que contiene cada el listado de las categorias del campeonato y que permite verificar 
                 el resultado de cada categoria -->
-            <div class="d-flex">
-                <div class="w-25">
-                    <ul class="list__categories">
-                        <li class="categories__car">Categoria TQ1</li>
-                        <li class="categories__car2">Categoria TQ2</li>
-                        <li class="categories__car2">Categoria TQ3</li>
-                        <li class="categories__car2">Categoria TQ4</li>
-                        <li class="categories__car2">Categoria TQ5</li>
-                        <li class="categories__car2">Categoria TQ6</li>
-                        <li class="categories__car2">Categoria TQ7</li>
-                        <li class="categories__car2">Categoria TQ8</li>
-                        <li class="categories__car2">Categoria TQ9</li>
-                        <li class="categories__car2">Categoria GTS2</li>
+            <div class="container d-flex">
+                <div class="w-25 d-none d-md-block h6">
+                    <ul class="list-group categories__car">
+                        <li class="list-group-item list-group-item-light">Categoria TQ1</li>
+                        <li class="list-group-item list-group-item-light">Categoria TQ2</li>
+                        <li class="list-group-item list-group-item-light">Categoria TQ3</li>
+                        <li class="list-group-item list-group-item-light">Categoria TQ4</li>
+                        <li class="list-group-item list-group-item-light">Categoria TQ5</li>
+                        <li class="list-group-item list-group-item-light">Categoria TQ6</li>
+                        <li class="list-group-item list-group-item-light">Categoria TQ7</li>
+                        <li class="list-group-item list-group-item-light">Categoria TQ8</li>
+                        <li class="list-group-item list-group-item-light">Categoria TQ9</li>
+                        <li class="list-group-item list-group-item-light">Categoria GTS2</li>
                     </ul>
                 </div>
                 <!-- Div que contiene la tabla de resultados de cada valida -->
                 <div class="container">
-                    <table class="table table-striped table-hover text-center">
+                    <table class="table table-responsive table-striped table-hover text-center">
                         <!-- Cabecera de la tabla de resultados -->
                         <thead>
                           <tr>
@@ -182,39 +198,35 @@
                             </tr>
                         </tbody>
                       </table>
-                </div>
+                </div>      
             </div>
         </section>
     </main>
     <footer class="footer">
+        <div class="container__name h5">
+            <span>Nuestros Patrocinadores</span>
+        </div>
         <!-- div que contiene los logos de los patrocinadores de todos los eventos. -->
-        <div class="footer__sponsors">
-            <div class="container_sponsors">
-                <div class="container__name">
-                    <span>Nuestros Patrocinadores</span>
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-6 col-sm-4 col-md-4 col-lg-2 p-2">
+                    <img src="../images/android.png" alt="" />
                 </div>
-                <!-- Logo de cada uno de los patrocinadores -->
-                <div class="sponsors__grid">
-                    <div class="sponsors__tq"> 
-                        <img src="../images/android.png" alt="" />
-                    </div>
-                    <div class="sponsors__tq">
-                        <img src="../images/poderosa.jpg" alt=""/>
-                    </div>
-                    <div class="sponsors__tq">
-                        <img src="../images/apple.png" alt=""/>
-                    </div>
-                    <div class="sponsors__tq"> 
-                        <img src="../images/android.png" alt=""/>
-                    </div>
-                    <div class="sponsors__tq">
-                        <img src="../images/poderosa.jpg" alt=""/>
-                    </div>
-                    <div class="sponsors__tq">
-                        <img src="../images/apple.png" alt=""/>
-                    </div>
+                <div class="col-6 col-sm-4 col-md-4 col-lg-2 p-2">
+                    <img src="../images/poderosa.jpg" alt="" />
                 </div>
-                
+                <div class="col-6 col-sm-4 col-md-4 col-lg-2 p-2">
+                    <img src="../images/apple.png" alt="" />
+                </div>
+                <div class="col-6 col-sm-4 col-md-4 col-lg-2 p-2">
+                    <img src="../images/android.png" alt="" />
+                </div>
+                <div class="col-6 col-sm-4 col-md-4 col-lg-2 p-2">
+                    <img src="../images/poderosa.jpg" alt="" />
+                </div>
+                <div class="col-6 col-sm-4 col-md-4 col-lg-2 p-2">
+                    <img src="../images/apple.png" alt="" />
+                </div>
             </div>
         </div>
         <!-- Div que contiene el logo y enlace a las cuentas de las redes sociales del Club -->
