@@ -411,13 +411,7 @@ tr{
     border-top: solid 10px #80272e;
     border-right: solid 10px #80272e;
   }
-  .legend{
-    line-height: 1;
-    text-align: left;
-    padding-right: 20px;
-    margin-right: 20px;
-  }
-
+  
   /* Estilos para la pagina drivers.html */
   .pilots{
     margin-right: 20px;
@@ -434,6 +428,7 @@ tr{
     flex-wrap: nowrap;
     margin: 10px;
 }
+
 .info{
     width: 100%;
     padding-right: 10px;
@@ -456,8 +451,18 @@ tr{
     text-align: right;
 }
 .rank{
-    font-size: 2.625rem;
+    font-size: 2.8rem;
     line-height: 3 rem;
+}
+
+.pts{
+    background-color: #000;
+    border-radius: 3px;
+    color: #fff;
+    padding: 1px 0 0;
+    text-align: center;
+    text-transform: uppercase;
+    width: 4rem;
 }
 
 .pilots__grid {
