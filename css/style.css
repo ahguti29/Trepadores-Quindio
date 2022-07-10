@@ -403,6 +403,21 @@ tr{
     gap: 50px;
   }
 
+  .news__notices{
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    padding-top: 20px;
+    padding-right: 20px;
+    border-top: solid 10px #80272e;
+    border-right: solid 10px #80272e;
+  }
+  .legend{
+    line-height: 1;
+    text-align: left;
+    padding-right: 20px;
+    margin-right: 20px;
+  }
+
   /* Estilos para la pagina drivers.html */
   .pilots{
     margin-right: 20px;
@@ -505,7 +520,7 @@ footer img{
   } 
   .rules__link{
     background-color: #05702c;
-    color: #fff;
+    color: rgb(243, 239, 1);
     display: inline-block;
     width: 100%;
     border-radius: 10px;
