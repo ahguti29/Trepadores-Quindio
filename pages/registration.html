@@ -63,91 +63,97 @@
     </header>
     <!-- Aqui ingresamos todo el contenido con la información principal de la página -->
     <main>
-        <div class="container_reg">
+        <div class="container">
             <h2>Formulario de Inscripción</h2>
             <!-- Formulario de inscripcion de los pilotos al campeonato -->
-            <form action="" method="" enctype="">
-                <!-- Aqui se solicitan los datos personales del Piloto -->
-                <h3>Datos del Piloto</h3>
-                <label for="nombre">Ingrese su nombre:</label>
-                <input type="text" id="nombre" name="nombre" placeholder="Nombre..."/>
-                
-                <label for="apellido">Ingrese sus apellidos:</label>
-                <input type="text" id="apellido" name="apellido" placeholder="Apellidos..."/>
-                <fieldset>
-                    <legend>Tipo de documento:</legend>
-                    <label for="cedula">Cedula de Ciudadania</label>
-                    <input type="radio" id="cedula" name="grupo"/>
-                    <label for="TI">Tarjeta de Identidad</label>
-                    <input type="radio" id="TI" name="grupo"/>
-                </fieldset>
-                <label for="numDoc">Numero de documento:</label>
-                <input type="text" id="numDoc" name="numDoc" minlength="7" maxlength="10" placeholder="Numero de identificación..."/>
-                <label for="depto">Departamento de Residencia:</label>
-                <select name="depto" id=depto">
-                    <option value="Antioquia">Antioquia</option>
-                    <option value="Bogota">Bogotá</option>
-                    <option value="Caldas">Caldas</option>
-                    <option value="Cundinamarca">Cundinamarca</option>
-                    <option value="Narino">Nariño</option>
-                    <option value="Quindio">Quindio</option>
-                    <option value="Tolima">Tolima</option>
-                    <option value="Valle">Valle</option>
-                </select>
-                
-                <label for="municipio">Municipio de Residencia:</label>
-                <input type="text" id="municipio" name="municipio" placeholder="Municipio..."/>
-                
-                <label for="eps">EPS:</label>
-                <input type="text" id="eps" name="eps" placeholder="EPS..."/>
-                
-                <!-- En esta parte se ingresa la información relacionada al Vehiculo -->
-                <h3>Datos del Vehiculo</h3>
-    
-                <label for="placa">Placa del Vehiculo:</label>
-                <input type="text" id="placa" name="placa" placeholder="Placa del Vehiculo"/>
-                <label for="marca">Marca del Vehiculo:</label>
-                <input type="text" id="marca" name="marca" placeholder="Marca del Vehiculo"/>
-                <label for="linea">Linea del Vehiculo:</label>
-                <input type="text" id="linea" name="linea" placeholder="Linea del Vehiculo"/>
-                <label for="modelo">Modelo del Vehiculo:</label>
-                <input type="text" id="modelo" name="modelo" placeholder="Modelo del Vehiculo"/>
-                
-                <label for="caracteristica">Caracteristica del Vehiculo:</label>
-                <select name="caracteristica" id="caracteristica">
-                    <option value="Aspirados">Aspirados</option>
-                    <option value="Bogota">Aspirados Modificados</option>
-                    <option value="Caldas">Aspirados Deportivos</option>
-                    <option value="Cundinamarca">Turbo o supercargados</option>
-                    <option value="Narino">Turbo FWD-AWD-RWD</option>
-                    <option value="Quindio">Turbo y aspirados</option>
-                    <option value="Tolima">501 hp o superior</option>
-                </select>
-                
-                <label for="color">Color del Vehiculo:</label>
-                <input type="text" id="color" name="color" placeholder="Color del Vehiculo"/>
-                
-                <label for="cilindrada">Cilindrada (CC):</label>
-                <input type="text" id="cilindrada" name="cilindrada" placeholder="Cilindrada del Vehiculo..."/>
-                
-                <label for="potencia">Potencia (HP):</label>
-                <input type="text" id="potencia" name="potencia" placeholder="Potencia (HP)"/>
-                
-                <label for="consulta">Escriba otras modificaciones del vehiculo: </label>
-                <textarea name="consulta" id="consulta" cols="40" rows="5" placeholder="Modificaciones del Vehiculo..."></textarea>
-
-                <!-- Aqui se anexan los documentos necesarios para la inscripción al campeonato -->
-                <h3>Documento de Identificación</h3>
-                <label for="archivo">Adjuntar Archivos:</label>
-                <input type="file" id="archivo" name="archivo"/>
-                <h3>Tarjeta de Propiedad del Vehiculo</h3>
-                <label for="TP">Adjuntar Archivos:</label>
-                <input type="file" id="TP" name="TP"/>
-                <h3>Certificado Afilición EPS</h3>
-                <label for="afiliacion">Adjuntar Archivos:</label>
-                <input type="file" id="afiliacion" name="afiliacion"/>
-                <button type="submit">Inscribir</button>
-                <button type="reset">Cancelar</button>
+            <form action="" method="" enctype="" class="row">
+                <h3 class="text-uppercase">Datos del Piloto</h3>
+                <div class="col-12 rounded border border-secondary border-3 border-opacity-50">
+                    <!-- Aqui se solicitan los datos personales del Piloto -->
+                    <label for="nombre">Ingrese su nombre:</label>
+                    <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre..."/>
+                    
+                    <label for="apellido">Ingrese sus apellidos:</label>
+                    <input type="text" class="form-control" id="apellido" name="apellido" placeholder="Apellidos..."/>
+                    <fieldset class="mb-3">
+                        <legend>Tipo de documento:</legend>
+                        <label class="form-check-label" for="cedula">Cedula de Ciudadania</label>
+                        <input type="radio" id="cedula" name="grupo"/>
+                        <label class="form-check-label" for="TI">Tarjeta de Identidad</label>
+                        <input type="radio" id="TI" name="grupo"/>
+                    </fieldset>
+                    <label for="numDoc">Numero de documento:</label>
+                    <input type="text" id="numDoc" name="numDoc" minlength="7" maxlength="10" placeholder="Numero de identificación..."/>
+                    <label for="depto">Departamento de Residencia:</label>
+                    <select name="depto" id=depto">
+                        <option value="Antioquia">Antioquia</option>
+                        <option value="Bogota">Bogotá</option>
+                        <option value="Caldas">Caldas</option>
+                        <option value="Cundinamarca">Cundinamarca</option>
+                        <option value="Narino">Nariño</option>
+                        <option value="Quindio">Quindio</option>
+                        <option value="Tolima">Tolima</option>
+                        <option value="Valle">Valle</option>
+                    </select>
+                    
+                    <label for="municipio">Municipio de Residencia:</label>
+                    <input type="text" id="municipio" name="municipio" placeholder="Municipio..."/>
+                    
+                    <label for="eps">EPS:</label>
+                    <input type="text" id="eps" name="eps" placeholder="EPS..."/>
+                </div>
+                <h3 class="text-uppercase">Datos del Vehiculo</h3>
+                <div class="col-12 rounded border border-secondary border-3 border-opacity-50">
+                    <!-- En esta parte se ingresa la información relacionada al Vehiculo -->
+                    <label for="placa">Placa del Vehiculo:</label>
+                    <input type="text" id="placa" name="placa" placeholder="Placa del Vehiculo"/>
+                    <label for="marca">Marca del Vehiculo:</label>
+                    <input type="text" id="marca" name="marca" placeholder="Marca del Vehiculo"/>
+                    <label for="linea">Linea del Vehiculo:</label>
+                    <input type="text" id="linea" name="linea" placeholder="Linea del Vehiculo"/>
+                    <label for="modelo">Modelo del Vehiculo:</label>
+                    <input type="text" id="modelo" name="modelo" placeholder="Modelo del Vehiculo"/>
+                    
+                    <label for="caracteristica">Caracteristica del Vehiculo:</label>
+                    <select name="caracteristica" id="caracteristica">
+                        <option value="Aspirados">Aspirados</option>
+                        <option value="Bogota">Aspirados Modificados</option>
+                        <option value="Caldas">Aspirados Deportivos</option>
+                        <option value="Cundinamarca">Turbo o supercargados</option>
+                        <option value="Narino">Turbo FWD-AWD-RWD</option>
+                        <option value="Quindio">Turbo y aspirados</option>
+                        <option value="Tolima">501 hp o superior</option>
+                    </select>
+                    
+                    <label for="color">Color del Vehiculo:</label>
+                    <input type="text" id="color" name="color" placeholder="Color del Vehiculo"/>
+                    
+                    <label for="cilindrada">Cilindrada (CC):</label>
+                    <input type="text" id="cilindrada" name="cilindrada" placeholder="Cilindrada del Vehiculo..."/>
+                    
+                    <label for="potencia">Potencia (HP):</label>
+                    <input type="text" id="potencia" name="potencia" placeholder="Potencia (HP)"/>
+                    
+                    <label for="consulta">Escriba otras modificaciones del vehiculo: </label>
+                    <textarea name="consulta" id="consulta" cols="40" rows="5" placeholder="Modificaciones del Vehiculo..."></textarea>
+                </div>
+                <h3 class="text-uppercase">Anexo de documentos</h3>
+                <div class="col-xs-6 rounded border border-secondary border-3 border-opacity-50">
+                    <!-- Aqui se anexan los documentos necesarios para la inscripción al campeonato -->
+                    <h3>Documento de Identificación</h3>
+                    <label for="archivo" class="form-label">Adjuntar documento de identificación</label>
+                    <input type="file" class="form-control" id="archivo" name="archivo"/>
+                    <h3>Tarjeta de Propiedad del Vehiculo</h3>
+                    <label for="TP" class="form-label">Adjuntar copia tarjeta de propiedad</label>
+                    <input type="file" class="form-control" id="TP" name="TP"/>
+                    <h3>Certificado Afilición EPS</h3>
+                    <label for="afiliacion" class="form-label">Adjuntar Archivos:</label>
+                    <input type="file" class="form-control" id="afiliacion" name="afiliacion"/>
+                    <div class="m-3 text-center">
+                    <button type="submit" class="btn btn-success mb-2">Inscribir</button>
+                    <button type="reset" class="btn btn-dark mb-2">Cancelar</button>
+                    </div>
+                </div>
             </form>
         </div>
     </main>
