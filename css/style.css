@@ -56,12 +56,6 @@ body{
     margin-bottom: 10px;
     text-transform: uppercase;
 }
-
-.race-title{
-    margin-bottom: 0;
-    height: 100%;
-}
-
 .race__info{
     display: flex;
 }
@@ -96,10 +90,10 @@ body{
 }
 
 .container__col2{
-    flex: 0 0 41.6%;
+    flex: 0 0 41.6%; 
     max-width: 41.6%;
     position: relative;
-    width: 100%;
+    width: 100%; 
     padding-right: 10px;
     padding-left: 10px;
     z-index: 1;
@@ -126,11 +120,12 @@ body{
 }
 
 .clock__date{
-    width: 20%;
+    width: 100%;
     text-align: center;
     text-transform: uppercase;
     border-right: solid 1px #f1525f;
     height: 80%;
+
 }
 .countdown__clock p{
     
@@ -413,42 +408,10 @@ tr{
   }
   
   /* Estilos para la pagina drivers.html */
-  .pilots{
-    margin-right: 20px;
-    margin-left: 20px;
-}
-
 .name_page{
     text-align: center;
     margin: 10px;
     padding: 5px;
-}
-.pilots__grid{
-    display: flex;
-    flex-wrap: nowrap;
-    margin: 10px;
-}
-
-.info{
-    width: 100%;
-    padding-right: 10px;
-    padding-left: 10px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid gray;
-    margin-bottom: 10px;
-    color: black;
-    text-align: center;
-    justify-content: space-between;
-}
-.info2{
-    width: 100%;
-    padding-right: 10px;
-    padding-left: 10px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid gray;
-    margin-bottom: 10px;
-    color: black;
-    text-align: right;
 }
 .rank{
     font-size: 2.8rem;
@@ -464,14 +427,6 @@ tr{
     text-transform: uppercase;
     width: 4rem;
 }
-
-.pilots__grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    gap: 50px;
-  }
-
   /* Aplicando estilos grid al footer de patrocinadores */
 footer img{
     width: 60px;
@@ -518,11 +473,6 @@ footer img{
     border-radius: 10px;
     margin-bottom: 20px;
   }
-  
-  .regulation {
-    margin-top: 40px;
-    padding: 25px;
-  } 
   .rules__link{
     background-color: #05702c;
     color: rgb(243, 239, 1);
@@ -530,14 +480,6 @@ footer img{
     width: 100%;
     border-radius: 10px;
     padding: 15px;
-    text-align: center;
-  }
-  .regulation__title {
-    margin-bottom: 20px;
-    text-align: center;
-  }
-  .cap__patrocinador{
-    display: flex;
     text-align: center;
   }
   .articles__grid {
@@ -548,19 +490,15 @@ footer img{
   } 
 
   @media (max-width: 1200px){
-    .sponsors__grid{
+    /* .sponsors__grid{
         grid-template-columns: repeat(6, 1fr);
-    }
-    /* .container__sponsors{
-        max-width: 1200px;
-        width: 100%;
-    } */
-  }
+    }*/
+} 
 
   @media (max-width: 992px){
-    .sponsors__grid{
+    /* .sponsors__grid{
         grid-template-columns: repeat(4, 1fr);
-    }
+    } */
 
     .container__sponsors{
         max-width: 960px;
@@ -569,55 +507,22 @@ footer img{
   }
   
   @media (max-width: 768px) {
-    /* .news {
-      grid-template-columns: repeat(2, 1fr);
-    } */
-    /* .races__list{
-        grid-template-columns: repeat(6, 1fr);
-    } */
-
-    .sponsors__grid{
+    /* .sponsors__grid{
         grid-template-columns: repeat(3, 1fr);
-     }
+     } */
 
      .footer__grid{
         grid-template-columns: 1fr;
         text-align: center;
     }
-    /* .pilots__grid {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(4, 1fr);
-    }
-    .articles__grid{
-        grid-template-columns: repeat(2,1fr);
-    } 
-   */
     }
 
   @media (max-width: 576px) {
-    /* .news {
-      grid-template-columns: repeat(2, 1fr);
-    } */
-    /* .races__list{
+    /* .sponsors__grid{
         grid-template-columns: repeat(2, 1fr);
     } */
-    .sponsors__grid{
-        grid-template-columns: repeat(2, 1fr);
-    }
     .footer__grid{
         grid-template-columns: 1fr;
         text-align: center;
-    }
-
-    /* .footer__social{
-        grid-template-columns: 1fr
-    }
-    .pilots__grid {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(5, 1fr);
-    }
-    .articles__grid{
-        grid-template-columns: 1fr;
-    } */
-  
+    }  
     }

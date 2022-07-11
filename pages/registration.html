@@ -17,7 +17,7 @@
 <body>
     <!-- Este es el header de la pagina donde encontramos barra de navegación -->
     <header class="sticky-top ">
-        <nav class="navbar navbar-expand-md navbar-dark headerpag">
+        <nav class="navbar navbar-expand-lg navbar-dark headerpag">
           <!-- <nav class="navbar navbar-expand-md bg-red"> -->
           <div class="container">
             <a class="navbar-brand" href="../index.html">
@@ -64,7 +64,7 @@
     <!-- Aqui ingresamos todo el contenido con la información principal de la página -->
     <main>
         <div class="container">
-            <h2>Formulario de Inscripción</h2>
+            <h2 class="text-uppercase">Formulario de Inscripción</h2>
             <!-- Formulario de inscripcion de los pilotos al campeonato -->
             <form action="" method="" enctype="" class="row">
                 <h3 class="text-uppercase">Datos del Piloto</h3>
@@ -138,7 +138,7 @@
                     <textarea name="consulta" id="consulta" cols="40" rows="5" placeholder="Modificaciones del Vehiculo..."></textarea>
                 </div>
                 <h3 class="text-uppercase">Anexo de documentos</h3>
-                <div class="col-xs-6 rounded border border-secondary border-3 border-opacity-50">
+                <div class="col-xs-6 rounded border border-secondary border-3 border-opacity-50 mb-2 p-4">
                     <!-- Aqui se anexan los documentos necesarios para la inscripción al campeonato -->
                     <h3>Documento de Identificación</h3>
                     <label for="archivo" class="form-label">Adjuntar documento de identificación</label>
@@ -149,10 +149,10 @@
                     <h3>Certificado Afilición EPS</h3>
                     <label for="afiliacion" class="form-label">Adjuntar Archivos:</label>
                     <input type="file" class="form-control" id="afiliacion" name="afiliacion"/>
-                    <div class="m-3 text-center">
+                </div>
+                <div class="mb-3 mt-3 text-center">
                     <button type="submit" class="btn btn-success mb-2">Inscribir</button>
                     <button type="reset" class="btn btn-dark mb-2">Cancelar</button>
-                    </div>
                 </div>
             </form>
         </div>
