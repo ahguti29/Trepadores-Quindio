@@ -489,6 +489,43 @@ footer img{
     gap: 50px;
   } 
 
+  /* Transiciones de imagenes en el index */
+
+.banner2{
+    width: 75%;
+    margin: auto;
+    overflow: hidden;
+    padding-top: 1rem;
+}
+
+.banner2 ul{
+    display: flex;
+    padding: 0;
+    width: 400%;
+
+    animation: mov 20s infinite alternate linear;
+}
+.banner2 li{
+    width: 100%;
+    list-style: none;
+}
+.banner2 img{
+    width: 100%;
+}
+@keyframes mov {
+    0%{margin-left: 0;}
+    20%{margin-left: 0;}
+
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+
+    75%{margin-left: -300%;}
+    100%{margin-left: -300%;}
+    }
+
   @media (max-width: 1200px){
     /* .sponsors__grid{
         grid-template-columns: repeat(6, 1fr);
