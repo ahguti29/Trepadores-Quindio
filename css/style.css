@@ -1,565 +1,148 @@
-@font-face{
-    font-family: 'Merriweather-Lightitalic';
-    src: url(../font/Merriweather-LightItalic.ttf)
-}
+@font-face {
+  font-family: 'Merriweather-Lightitalic';
+  src: url(../font/Merriweather-LightItalic.ttf); }
 
 @font-face {
-    font-family: 'Merriweather-Bold';
-    src: url(../font/Merriweather-Bold.ttf);
-}
+  font-family: 'Merriweather-Bold';
+  src: url(../font/Merriweather-Bold.ttf); }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    list-style-type: none;
-    text-decoration: none;
-}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none; }
 
-body{
-	font-family: 'Merriweather-Lightitalic';
-    background-color: rgb(214, 214, 214);
-}
+body {
+  font-family: 'Merriweather-Lightitalic';
+  background-color: #d6d6d6; }
 
 .headerpag {
-    color: white;
-	background-color: #353535;
-    z-index: 2;
-}
+  color: white;
+  background-color: #353535;
+  z-index: 2; }
 
-.navbar-nav li a{
-    font-size: medium;
-}
-.countdown{
-    background-color: rgb(124, 39, 56);
-    padding: 10px;
-    border-bottom: 1px solid #80272e ;
-    max-height: 100%;
-}
-.countdown__container{
-    /* max-width: 1000px; */
-    padding-right: 10px;
-    padding-left: 10px;
-    margin-left: 20px;
-    margin-right: 20px;
-    font-family: 'Merriweather-Bold';
-}
+.navbar-nav li a {
+  font-size: medium; }
 
-.race__status__date{
+.countdown {
+  background-color: #7c2738;
+  padding: 10px;
+  border-bottom: 1px solid #80272e;
+  max-height: 100%; }
+
+.race__status {
+  color: #e0dddd;
+  margin-bottom: 10px;
+  text-transform: uppercase; }
+  .race__status-date {
     margin: 0;
     line-height: 15px;
-    letter-spacing: .5px;
-}
+    letter-spacing: .5px; }
 
-.race-status{
-    color: rgb(224, 221, 221);
-    margin-bottom: 10px;
-    text-transform: uppercase;
-}
-.race__info{
-    display: flex;
-}
-.race__info .race__circuit__image{
+.race_info {
+  display: flex; }
+  .race_info__circuit {
     border-top: solid 1px #f1525f;
     border-right: solid 1px #f1525f;
     border-top-right-radius: 10px;
     padding-top: 10px;
     padding-right: 10px;
     width: 70px;
-    margin-right: 15px;
-}
-.race__circuit__image img{
-    width: 50px;
-}
-
-.race__info .race__info__text{
+    margin-right: 15px; }
+    .race_info__circuit img {
+      width: 50px; }
+  .race_info__text {
     padding-top: 15px;
     border-top: solid 1px #f1525f;
     border-right: solid 1px #f1525f;
     border-top: solid 1px #f1525f;
-    border-top-right-radius:10px;
-    width: 50%;
-}
+    border-top-right-radius: 10px;
+    width: 50%; }
+    .race_info__text-race_text {
+      display: inline-block;
+      font-size: 25px;
+      line-height: 30px;
+      text-transform: uppercase;
+      color: #e0dddd; }
+    .race_info__text .race_info {
+      display: flex; }
+    .race_info__text span {
+      color: #e0dddd; }
 
-.race__info__text .race_text{
-    display: inline-block;
-    font-size: 25px;
-    line-height: 30px;
-    text-transform: uppercase;
-    color: rgb(224, 221, 221);
-}
-
-.container__col2{
-    flex: 0 0 41.6%; 
-    max-width: 41.6%;
-    position: relative;
-    width: 100%; 
-    padding-right: 10px;
-    padding-left: 10px;
-    z-index: 1;
-}
-
-.countdown__clock__wraper{
-    margin-top: 0;
-    display: table;
-    width: 100%;
-}
-
-.container__col2  .countdown__clock{
+.container__col2 {
+  flex: 0 0 41.6%;
+  max-width: 41.6%;
+  position: relative;
+  width: 100%;
+  padding-right: 10px;
+  padding-left: 10px;
+  z-index: 1; }
+  .container__col2 .countdown__clock {
     display: table-cell;
     padding: 10px;
     background-color: #a76066;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
-    vertical-align: middle;
-}
-.clock{
-    display: flex;
-    max-width: 100%;
-    max-height: 100%;
-}
+    vertical-align: middle; }
+    .container__col2 .countdown__clock p {
+      color: #e0dddd; }
+    .container__col2 .countdown__clock span {
+      display: block;
+      color: #e0dddd; }
 
-.clock__date{
+.countdown__clock__wraper {
+  margin-top: 0;
+  display: table;
+  width: 100%; }
+
+.clock {
+  display: flex;
+  max-width: 100%;
+  max-height: 100%; }
+  .clock__date {
     width: 100%;
     text-align: center;
     text-transform: uppercase;
     border-right: solid 1px #f1525f;
-    height: 80%;
+    height: 80%; }
+    .clock__date-logo {
+      width: 80px;
+      margin-left: 5px;
+      height: 60px;
+      margin-top: 5px; }
 
-}
-.countdown__clock p{
-    
-    color: rgb(224, 221, 221);
-}
-.countdown__clock span{
-    display: block;
-    color: rgb(224, 221, 221);
-}
-
-.clock__logo{
-    width: 80px;
-    margin-left: 5px;
-    height: 60px;
-    margin-top: 5px;
-}
-
-/* Transiciones de imagenes en el index */
-
-.banner{
-    width: 95%;
-    margin: auto;
-    overflow: hidden;
-    padding-top: 2rem;
-}
-
-.banner ul{
-    display: flex;
-    padding: 0;
-    width: 400%;
-
-    animation: cambio 20s infinite alternate linear;
-}
-.banner li{
-    width: 100%;
-    list-style: none;
-}
-.banner img{
-    width: 100%;
-}
-@keyframes cambio {
-    0%{margin-left: 0;}
-    20%{margin-left: 0;}
-
-    25%{margin-left: -100%;}
-    45%{margin-left: -100%;}
-
-    50%{margin-left: -200%;}
-    70%{margin-left: -200%;}
-
-    75%{margin-left: -300%;}
-    100%{margin-left: -300%;}
-    }
- /* Estilo para la seccion de races que contiene información ordenada cronológicamente
-  de cada una de las etapas del campeonato */
-.races__calendar{
-    background-color: #272626;
-    color: white;
-    height: 100%;
-    padding: 5px;
-}
-
-.races__list{
-    align-items: center;
-    justify-items: center;
-    color: #353535;
-}
-
-.etapa{
-    text-align: center;
-    width: 100%;
-}
-
-.etapa_city{
-    align-items: center;
-    justify-items: center;
-}
-
-.flag img{
-    display: block;
-    height: 52px;
-    width: 68px;
-    margin: 0 auto 20px;
-    align-items: center;
-    justify-items: center;
-}
-
-.footer{
-    color: white;
-	background-color: #343434;
-    padding: 20px 10px;
-    position: sticky;
-    top: 0;
-}
-
-.footer__sponsors{
-    display: display;
-    justify-content: space-between;
-    max-width: 2000px;
-    margin: 0 auto;
-}
-
-.footer__social{
-    padding: 20px 0 20px;
-    text-align: center;
-}
-.footer__grid{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 50px;
-}
-
-.footer__grid-reserved{
-    text-align: center;
-    padding-top: 20px;
-}
-.container__row{
-    display: flex;
-    margin-bottom: 15px;
-    flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: 15;
-    justify-content: space-between;
-    align-items: center;
-}
-.container__sponsors{
-    max-width: 960px;
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-}
-.footer_logo{
-    padding: 10px 0 15px;
-}
-.container__name{
+.footer {
+  color: white;
+  background-color: #343434;
+  padding: 20px 10px;
+  position: sticky;
+  top: 0; }
+  .footer img {
+    width: 60px;
+    height: 60px; }
+  .footer__containername {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin: 5px;
-    padding: 5px;
-}
-/* Estilos para la pagina registration.html */
-.container_reg{
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
-}
-
-input[type=text], input[type=password], select, textarea {
-    width: 100%; 
-    padding: 12px; 
-    border: 1px solid #ccc;
-    border-radius: 4px; 
-    box-sizing: border-box; 
-    margin-top: 6px; 
-    margin-bottom: 16px; 
-    resize: vertical;
-  }
-
-  button[type=submit], button[type=reset] {
-    background-color: #04aa3b;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-
-h2{
-    text-align: center;
-    padding: 10px;
-}
-h3{
-    padding: 12px;
-}
-
-  /* Estilos para la pagina stadings.html */
-
-.title{
-    text-align: center;
-    margin: 10px;
-}
-
-.title select{
-    width: 30%;
-    padding: 8px;
-  }
-.results__list{
-    width: 200px;
-}
-.list__categories li {
-    line-height: 1.214;
-}
-.categories__car{
-    border-left: 4px solid yellow;
-    background: #cac3c3;
-    font-weight: 600;
-    cursor: default;
-    font-size: 1.2rem;
-}
-.categories__car2{
-    border-left: 3px solid rgb(111, 114, 112);
-    background: #f2f2f2;
-    color: black;
-    font-weight: 600;
-    padding: 9px 0 8px 9px;
-    cursor: default;
-    font-size: 1.2rem;
-}
-.table__tq{
-    border-collapse: collapse;
-    width: 100%;
-    height: 100%;
-  
-}
-th, td{
-    text-align: center;
-    padding: 8px;
-}
-
-tr{
-    background-color: #f2f2f2;
-}
-
-/* Estilos para la pagina video.html */
-
- .card {
-    background-color: #fff;
-    padding: 20px;
-    /* width: 400px; */
-    border-radius: 10px;
-    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
-  }
-  
-  .card__header {
-    position: relative;
-  }
-  
-  .card__header iframe {
-    width: 100%;
-    border-radius: 10px;
-    margin-bottom: 20px;
-  }
-  
-  .card__title{
-    margin-bottom: 20px;
-  }
-  .card__description{
-    margin-bottom: 40px;
-  }
-  
-  .courses {
-    margin-top: 40px;
-  }
-  
-  .card__header--strong{
-    text-transform: uppercase;
-    font-weight: bold;
-  }
-  .courses__title {
-    margin-bottom: 20px;
-    text-align: center;
-  }
-  
-  .courses__grid {
+    padding: 5px; }
+  .footer__grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 50px;
-  }
-
-  .news__notices{
-    border-top-right-radius: 25px;
-    border-bottom-right-radius: 25px;
-    padding-top: 20px;
-    padding-right: 20px;
-    border-top: solid 10px #80272e;
-    border-right: solid 10px #80272e;
-  }
-  
-  /* Estilos para la pagina drivers.html */
-.name_page{
-    text-align: center;
-    margin: 10px;
-    padding: 5px;
-}
-.rank{
-    font-size: 2.8rem;
-    line-height: 3 rem;
-}
-
-.pts{
-    background-color: #000;
-    border-radius: 3px;
-    color: #fff;
-    padding: 1px 0 0;
-    text-align: center;
-    text-transform: uppercase;
-    width: 4rem;
-}
-  /* Aplicando estilos grid al footer de patrocinadores */
-footer img{
-    width: 60px;
-    height: 60px;
-}
-.footer_logo a img{
-    width: 100px;
-    height: 50px;
-}
-.footer__rrss{
-    margin-top: 30px;
-    display: flex;
-    justify-content: space-evenly;
-}
-  
-.footer__rrss a{
-    color: #e2e8f0;
-    font-size: 30px;
-  }
-
-.footer__rrss a:hover{
-    color: #13a31a;
-    transition: color 0.3s;
-  }
-
-.chat a:hover {
-    transform: rotate(5deg);
-}
-/* Aplicando estilos al html regulations */
-.capitules {
-    background-color: #fff;
-    padding: 20px;
-    /* width: 400px; */
-    border-radius: 10px;
-    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
-  }
-  
-  .rules__header {
-    position: relative;
-  }
-  
-  .rules__header img {
-    width: 100%;
-    border-radius: 10px;
-    margin-bottom: 20px;
-  }
-  .rules__link{
-    background-color: #05702c;
-    color: rgb(243, 239, 1);
-    display: inline-block;
-    width: 100%;
-    border-radius: 10px;
-    padding: 15px;
-    text-align: center;
-  }
-  .articles__grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 0.5fr);
-    gap: 50px;
-  } 
-
-  /* Transiciones de imagenes en el index */
-
-.banner2{
-    width: 75%;
-    margin: auto;
-    overflow: hidden;
-    padding-top: 1rem;
-}
-
-.banner2 ul{
-    display: flex;
-    padding: 0;
-    width: 400%;
-
-    animation: mov 20s infinite alternate linear;
-}
-.banner2 li{
-    width: 100%;
-    list-style: none;
-}
-.banner2 img{
-    width: 100%;
-}
-@keyframes mov {
-    0%{margin-left: 0;}
-    20%{margin-left: 0;}
-
-    25%{margin-left: -100%;}
-    45%{margin-left: -100%;}
-
-    50%{margin-left: -200%;}
-    70%{margin-left: -200%;}
-
-    75%{margin-left: -300%;}
-    100%{margin-left: -300%;}
-    }
-
-  @media (max-width: 1200px){
-    /* .sponsors__grid{
-        grid-template-columns: repeat(6, 1fr);
-    }*/
-} 
-
-  @media (max-width: 992px){
-    /* .sponsors__grid{
-        grid-template-columns: repeat(4, 1fr);
-    } */
-
-    .container__sponsors{
-        max-width: 960px;
-        width: 100%;
-    }
-  }
-  
-  @media (max-width: 768px) {
-    /* .sponsors__grid{
-        grid-template-columns: repeat(3, 1fr);
-     } */
-
-     .footer__grid{
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
-    }
-
-  @media (max-width: 576px) {
-    /* .sponsors__grid{
-        grid-template-columns: repeat(2, 1fr);
-    } */
-    .footer__grid{
-        grid-template-columns: 1fr;
-        text-align: center;
-    }  
-    }
+    gap: 50px; }
+    .footer__grid-logo {
+      padding: 10px 0 15px; }
+      .footer__grid-logo a img {
+        width: 100px;
+        height: 50px; }
+    .footer__grid-reserved {
+      text-align: center;
+      padding-top: 20px; }
+    .footer__grid-rrss {
+      margin-top: 30px;
+      display: flex;
+      justify-content: space-evenly; }
+      .footer__grid-rrss a {
+        color: #e2e8f0;
+        font-size: 30px; }

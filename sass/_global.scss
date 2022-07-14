@@ -1,0 +1,22 @@
+@font-face{
+    font-family: 'Merriweather-Lightitalic';
+    src: url(../font/Merriweather-LightItalic.ttf)
+}
+
+@font-face {
+    font-family: 'Merriweather-Bold';
+    src: url(../font/Merriweather-Bold.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+body{
+	font-family: 'Merriweather-Lightitalic';
+    background-color: rgb(214, 214, 214);
+}

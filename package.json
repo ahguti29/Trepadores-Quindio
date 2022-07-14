@@ -1,0 +1,22 @@
+{
+  "name": "trepadores",
+  "version": "1.0.0",
+  "description": "Proyecto Pagina Trepadores Quindio",
+  "main": "index.js",
+  "scripts": {
+    "build":"node-sass --include-path sass ./sass/index.scss ./css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ahguti29/Trepadores-Quindio.git"
+  },
+  "author": "Alvaro Huertas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ahguti29/Trepadores-Quindio/issues"
+  },
+  "homepage": "https://github.com/ahguti29/Trepadores-Quindio#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  }
+}
