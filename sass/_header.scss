@@ -16,12 +16,12 @@
 .countdown{
     background-color: rgb(124, 39, 56);
     padding: 10px;
-    border-bottom: 1px solid #80272e ;
+    border-bottom: 1px solid $colorBordes ;
     max-height: 100%;
 }
 
 .race__status{
-    color: rgb(224, 221, 221);
+    color: $colorTexto;
     margin-bottom: 10px;
     text-transform: uppercase;
     &-date{
@@ -35,8 +35,8 @@
     display: flex;
 
     &__circuit{
-        border-top: solid 1px #f1525f;
-        border-right: solid 1px #f1525f;
+        border-top: solid 1px $colorConteo;
+        border-right: solid 1px $colorConteo;
         border-top-right-radius: 10px;
         padding-top: 10px;
         padding-right: 10px;
@@ -50,9 +50,9 @@
 
     &__text{
         padding-top: 15px;
-        border-top: solid 1px #f1525f;
-        border-right: solid 1px #f1525f;
-        border-top: solid 1px #f1525f;
+        border-top: solid 1px $colorConteo;
+        border-right: solid 1px $colorConteo;
+        border-top: solid 1px $colorConteo;
         border-top-right-radius:10px;
         width: 50%;
 
@@ -61,7 +61,7 @@
             font-size: 25px;
             line-height: 30px;
             text-transform: uppercase;
-            color: rgb(224, 221, 221);
+            color: $colorTexto;
         }
 
         .race_info{
@@ -69,7 +69,7 @@
         }
 
         span{
-            color: rgb(224, 221, 221);
+            color: $colorTexto;
         }
 
     }
@@ -93,12 +93,12 @@
     vertical-align: middle;
 
         p{
-            color: rgb(224, 221, 221);
+            color: $colorTexto;
         }
 
         span{
             display: block;
-            color: rgb(224, 221, 221);
+            color: $colorTexto;
         }
     }
 }
@@ -119,7 +119,7 @@
         width: 100%;
         text-align: center;
         text-transform: uppercase;
-        border-right: solid 1px #f1525f;
+        border-right: solid 1px $colorConteo;
         height: 80%;
         
         &-logo{

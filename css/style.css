@@ -181,18 +181,42 @@ h2 {
   border-top: solid 10px #80272e;
   border-right: solid 10px #80272e; }
 
-.card {
+.card-main {
   background-color: #fff;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5); }
-
-.card__header {
-  position: relative; }
-  .card__header iframe {
+  .card-main iframe {
     width: 100%;
     border-radius: 10px;
     margin-bottom: 20px; }
+  .card-main img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px; }
+
+.card-video {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5); }
+  .card-video iframe {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px; }
+
+.btn-base, .btn-inscribir, .btn-cancel {
+  color: white;
+  padding: 10px 30px;
+  text-decoration: none;
+  border-radius: 10px;
+  border: none; }
+
+.btn-inscribir {
+  background-color: #04aa3b; }
+
+.btn-cancel {
+  background-color: #f83737; }
 
 .footer {
   color: white;

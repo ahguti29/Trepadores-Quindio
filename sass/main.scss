@@ -76,25 +76,35 @@
     border-bottom-right-radius: 25px;
     padding-top: 20px;
     padding-right: 20px;
-    border-top: solid 10px #80272e;
-    border-right: solid 10px #80272e;
+    border-top: solid 10px $colorBordes;
+    border-right: solid 10px $colorBordes;
   }
   
-.card {
+  // Aplicando el mixin para las tarjetas a utilizar en diferentes páginas
+@mixin card-model {
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
-  }
-
-.card__header {
-    position: relative;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);    
 
     iframe{
         width: 100%;
         border-radius: 10px;
         margin-bottom: 20px;
-    }
+        }
 }
+
+.card-main {
+   @include card-model();
+
+    img{
+        width: 100%;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+  }
+
+
+
     
     
