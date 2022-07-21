@@ -1,3 +1,8 @@
+$redesSociales: (
+    instagram: #c92d8f,
+    youtube: #ee1809,
+    facebook: #724ff1,
+  );
 .footer{
     color: white;
 	background-color: #343434;
@@ -49,11 +54,21 @@
                 font-size: 30px;
             }
 
-            a:hover{
-                color: #13a31a;
-                transition: color 0.3s;
-            }
+            // a:hover{
+            //     color: #13a31a;
+            //     transition: color 0.3s;
+            // }
         }
     }
+      
 } 
+@each $nombre, $color in $redesSociales {
+    .link-#{$nombre}{
+        color: #e2e8f0;
+        &:hover{
+            color: $color;
+            transition: color 0.3s;
+        }
+    }    
+  }
 
