@@ -15,3 +15,23 @@
     @extend .btn-base;
     background-color: rgb(248, 55, 55);
 }
+
+input[type=text], input[type=password], select, textarea {
+    width: 100%; 
+    padding: 12px; 
+    border: 1px solid #ccc;
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical;
+  }
+
+h2{
+    text-align: center;
+    padding: 10px;
+}
+
+h3{
+    padding: 12px;
+}
