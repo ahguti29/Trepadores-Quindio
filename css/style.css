@@ -292,6 +292,13 @@ tr {
     border-radius: 10px;
     margin-bottom: 20px; }
 
+.categories__car {
+  border-left: 4px solid yellow;
+  background: #cac3c3;
+  font-weight: 600;
+  cursor: default;
+  font-size: 1.2rem; }
+
 .btn-base, .btn-inscribir, .btn-cancel {
   color: white;
   padding: 10px 30px;
@@ -339,6 +346,27 @@ h3 {
   text-align: center;
   text-transform: uppercase;
   width: 4rem; }
+
+.capitules {
+  background-color: #fff;
+  padding: 20px;
+  /* width: 400px; */
+  border-radius: 10px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5); }
+  .capitules__rules {
+    position: relative; }
+    .capitules__rules img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 20px; }
+    .capitules__rules-link {
+      background-color: #05702c;
+      color: #f3ef01;
+      display: inline-block;
+      width: 100%;
+      border-radius: 10px;
+      padding: 15px;
+      text-align: center; }
 
 .footer {
   color: white;
