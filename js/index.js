@@ -45,7 +45,7 @@ let pilot = new Piloto(
 
 class Carro {
 	/* Metodo constructor de la clase carro */
-	constructor(placa, marca, linea, modelo, caracteristica, color, potencia, cilindrada) {
+	constructor(placa, marca, linea, modelo, caracteristica, color, potencia, cilindrada, categoria) {
 		this.placa = placa.toUpperCase();
 		this.marca = marca.toUpperCase();
 		this.linea = linea.toUpperCase();
@@ -54,13 +54,15 @@ class Carro {
 		this.color = color;
 		this.potencia = potencia;
 		this.cilindrada = cilindrada;
+        this.categoria = categoria;
+
 	}
 }
 
 let placa = prompt('Ingrese la placa del carro: ');
-let marca = prompt('Ingrese la marca del carro: ');
-let linea = prompt('Ingrese la linea del carro:');
-let modelo = parseInt(prompt('Ingrese el modelo de su vehiculo: '));
+let marca = prompt('Ingrese la marca del carro: \n Ejemplo: Renault, Chevrolet, Mercedez');
+let linea = prompt('Ingrese la linea del carro: \n Ejemplo: Sail');
+let modelo = prompt('Ingrese el modelo de su vehiculo: \n Ejemplo: LS, LT, LTZ ');
 let caracteristica = parseInt(
 	prompt(
 		'Seleccione el número de la caracteristica que corresponda:  \n 1. Aspirados \n 2. Aspirados Modificados \n 3. Aspirados Deportivos \n 4. Turbo o Supercargados \n 5. Turbo Stock \n 6. Turbo FWD-AWD-RWD \n 7. Turbos y aspirados FWD-AWD-RWD \n 8. 501 hp o superior '
@@ -72,9 +74,120 @@ let cilindrada = prompt(
 	'Ingrese la cilindrada del carro en (CC): '
 );
 
-/* Linea que permite crear un nuevo carro teniendo en cuenta los datos ingresados por el usuario */
-let car = new Carro( placa, marca, linea, modelo, caracteristica, color, potencia, cilindrada);
+/* Funcion que permite ubicar el carro en la categoria que le corresponda
+teniendo en cuenta 3 aspectos que son el cilindraje o cilindrada, la potencia 
+y las modificaciones del vehiculo o caracteristicas*/
 
+const categoriaCarro = (caracteristica, cilindrada, potencia) => {
+    /* De acuerdo a la caracteristica ingresada por el usuario evalua cada uno de los valores y de acuerdo  a
+	las  decisiones de cada caso ubica al vehiculo en la categoria que corresponda.*/
+	switch (caracteristica) {
+		case 1:
+			if (cilindrada <= 1400) {
+				alert('Su carro esta en la categoria TQ1');
+				break;
+			} else if (cilindrada >= 1500 && cilindrada <= 1600) {
+				alert('Su carro esta en la categoria TQ2');
+				break;
+			} else if (cilindrada >= 1800 && cilindrada <= 2500) {
+				alert('Su carro esta en la categoria TQ4');
+				break;
+			}
+			break;
+
+		case 2:
+			if (cilindrada >= 1300 && cilindrada <= 2000) {
+				alert('Su carro esta en la categoria TQ3');
+			}
+			break;
+		case 3:
+			if (cilindrada >= 2000 && cilindrada <= 3700) {
+				alert('Su carro esta en la categoria TQ5');
+				break;
+			} else {
+				alert(
+					'La cilindrada en la caracteristica seleccionada no esta permitida'
+				);
+				categoriaAuto();
+			}
+			break;
+		case 4:
+			if (cilindrada <= 1800 && potencia <= 260) {
+				alert('Su carro esta en la categoria TQ6');
+			} else {
+				alert(
+					'La cilindrada en la caracteristica seleccionada no esta permitida'
+				);
+				categoriaAuto();
+			}
+			break;
+		case 5:
+			if (cilindrada === 2000 && potencia <= 260) {
+				alert('Su carro esta en la categoria TQ6');
+			} else {
+				alert(
+					'La cilindrada en la caracteristica seleccionada no esta permitida'
+				);
+				categoriaAuto();
+			}
+			break;
+		case 6:
+			if (
+				cilindrada >= 2000 &&
+				cilindrada <= 3000 &&
+				potencia > 260 &&
+				potencia <= 360
+			) {
+				alert('Su carro esta en la categoria TQ7');
+				break;
+			} else if (cilindrada <= 3000 && potencia > 360 && potencia <= 400) {
+				alert('Su carro esta en la categoria TQ8');
+				break;
+			} else {
+				alert(
+					'La cilindrada en la caracteristica seleccionada no esta permitida'
+				);
+				categoriaAuto();
+			}
+			break;
+		case 7:
+			if (potencia > 400 && potencia <= 500) {
+				alert('Su carro esta en la categoria TQ9');
+				break;
+			} else {
+				alert(
+					'La potencia del vehiculo en la caracteristica seleccionada no esta permitida'
+				);
+				categoriaAuto();
+			}
+			break;
+		case 8:
+			if (potencia > 500) {
+				alert('Su carro esta en la categoria GTS2');
+				break;
+			} else if (potencia <= 500) {
+				alert(
+					'La potencia del vehiculo en la caracteristica seleccionada no esta permitida'
+				);
+				categoriaAuto();
+				break;
+			} else break;
+		default:
+			alert('El valor ingresado es incorrecto');
+			break;
+	}
+
+	alert('Su registro fue exitoso');
+	return;
+};
+
+//Variable que llama a la funcion categoria carro para obtener la categoria en la cual quedara el carro
+// y tener datos completos para completar el registro.
+let categoria = categoriaCarro(caracteristica, cilindrada, potencia);
+/* Linea que permite crear un nuevo carro teniendo en cuenta los datos ingresados por el usuario */
+let car = new Carro( placa, marca, linea, modelo, caracteristica, color, potencia, cilindrada, categoria);
+
+/* Linea que permite agregar el registro a el array de pilotos y carros */
 pilotos.push(pilot);
 carros.push(car);
 alert('registro exitoso');
