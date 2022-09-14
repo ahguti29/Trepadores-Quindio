@@ -1,49 +1,49 @@
 /* Clase que hace referencia a los pilotos que se van a registrar */
-class Piloto {
+class Pilot {
 	/* Metodo constructor de la clase piloto */
-	constructor(nombre, apellido, tipoDoc, numDoc, edad, depto, municipio, eps) {
-		this.nombre = nombre.toUpperCase();
-		this.apellido = apellido.toUpperCase();
-		this.tipoDoc = tipoDoc.toUpperCase();
-		this.numDoc = numDoc;
-		this.edad = edad;
+	constructor(name, lastname, idType, id , years, depto, city, eps) {
+		this.name = name.toUpperCase();
+		this.lastname = lastname.toUpperCase();
+		this.idType = idType.toUpperCase();
+		this.id = id;
+		this.years = years;
 		this.depto = depto;
-		this.municipio = municipio;
+		this.city = city;
 		this.eps = eps;
 	}
 }
 
 /* Declaración de los array  donde se van a guardar los pilotos y carros registrados */
-const pilotos = [];
-const carros = [];
+const pilots = [];
+const cars = [];
 /* Solicitud de todos los datos del piloto mendiante el prompt */
-let nombre = prompt('Ingrese su nombre: ');
-let apellido = prompt('Ingrese su apellido: ');
-let tipoDoc = prompt(
+let nameP = prompt('Ingrese su nombre: ');
+let lastname = prompt('Ingrese su apellido: ');
+let idType = prompt(
 	'Ingrese el tipo de documento: \n CC = Cedula de Ciudadania \n TI = Tarjeta de Identidad'
 );
-let numDoc = parseInt(
+let id = parseInt(
 	prompt('Ingrese numero de documento sin puntos ni comas: ')
 );
-let edad = parseInt(prompt('Ingrese su edad: '));
+let years = parseInt(prompt('Ingrese su edad: '));
 let depto = prompt('Ingrese el Departamento de residencia: ');
-let municipio = prompt('Ingres el municipio de residencia: ');
+let city = prompt('Ingres el municipio de residencia: ');
 let eps = prompt('Ingrese el nombre de la EPS a la cual usted esta afiliado: ');
 
 /* Linea que permite crear un nuevo piloto teniendo en cuenta los datos ingresados por el usuario */
-let pilot = new Piloto(
-	nombre,
-	apellido,
-	tipoDoc,
-	numDoc,
-	edad,
+let piloto = new Pilot(
+	nameP,
+	lastname,
+	idType,
+	id,
+	years,
 	depto,
-	municipio,
+	city,
 	eps
 );
 
 
-class Carro {
+class Car {
 	/* Metodo constructor de la clase carro */
 	constructor(placa, marca, linea, modelo, caracteristica, color, potencia, cilindrada, categoria) {
 		this.placa = placa.toUpperCase();
@@ -185,11 +185,11 @@ const categoriaCarro = (caracteristica, cilindrada, potencia) => {
 // y tener datos completos para completar el registro.
 let categoria = categoriaCarro(caracteristica, cilindrada, potencia);
 /* Linea que permite crear un nuevo carro teniendo en cuenta los datos ingresados por el usuario */
-let car = new Carro( placa, marca, linea, modelo, caracteristica, color, potencia, cilindrada, categoria);
+let carro = new Car( placa, marca, linea, modelo, caracteristica, color, potencia, cilindrada, categoria);
 
 /* Linea que permite agregar el registro a el array de pilotos y carros */
-pilotos.push(pilot);
-carros.push(car);
+pilots.push(piloto);
+cars.push(carro);
 alert('registro exitoso');
-console.log(pilotos);
-console.log(carros);
+console.log(pilots);
+console.log(cars);
