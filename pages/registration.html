@@ -79,9 +79,9 @@
                     <fieldset class="mb-3">
                         <legend>Tipo de documento:</legend>
                         <label class="form-check-label" for="cedula">Cedula de Ciudadania</label>
-                        <input type="radio" id="cedula" name="grupo"/>
+                        <input type="radio" id="cedula" name="grupo" value="CC"/>
                         <label class="form-check-label" for="TI">Tarjeta de Identidad</label>
-                        <input type="radio" id="TI" name="grupo"/>
+                        <input type="radio" id="ti" name="grupo" value="TI"/>
                     </fieldset>
                     <label for="numDoc">Numero de documento:</label>
                     <input type="text" id="numDoc" name="numDoc" minlength="7" maxlength="10" placeholder="Numero de identificación..."/>
@@ -152,7 +152,7 @@
                     <input type="file" class="form-control" id="afiliacion" name="afiliacion"/>
                 </div>
                 <div class="mb-3 mt-3 text-center">
-                    <button type="submit" class="btn-inscribir mb-2">Inscribir</button>
+                    <button type="submit" class="btn-inscribir mb-2" id="btn">Inscribir</button>
                     <button type="reset" class="btn-cancel mb-2">Cancelar</button>
                 </div>
             </form>
@@ -214,6 +214,7 @@
           />
         </a>
     </div>
+    <script src="../js/formulario.js"></script>
     <!-- <script src="../js/index.js"></script> -->
 </body>
 </html>

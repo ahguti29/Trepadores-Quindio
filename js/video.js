@@ -2,8 +2,7 @@ const mostrarVideos = (videos) => {
     const contenedorVideos = document.getElementById("contenedor_video")
 
     videos.forEach(video => {
-        const div = document.createElement("div")
-        div.classList.add("row")
+        const div = document.getElementById("vid");
         div.innerHTML += `<div class="col-sm-12 col-md-6 col-lg-4 pt-3 pb-3">
                             <article class="card-video effect">
                             <iframe src="${video.link}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -18,4 +17,5 @@ const mostrarVideos = (videos) => {
     })
 }
 
-mostrarVideos(videos)
+
+mostrarVideos(videos);
