@@ -67,7 +67,7 @@
         <div class="container">
             <h2 class="text-uppercase">Formulario de Inscripción</h2>
             <!-- Formulario de inscripcion de los pilotos al campeonato -->
-            <form action="" method="" enctype="" class="row">
+            <form action="" method="" enctype="" class="row" id="form">
                 <h3 class="text-uppercase">Datos del Piloto</h3>
                 <div class="col-12 rounded border border-secondary border-3 border-opacity-50">
                     <!-- Aqui se solicitan los datos personales del Piloto -->
@@ -86,7 +86,7 @@
                     <label for="numDoc">Numero de documento:</label>
                     <input type="text" id="numDoc" name="numDoc" minlength="7" maxlength="10" placeholder="Numero de identificación..."/>
                     <label for="depto">Departamento de Residencia:</label>
-                    <select name="depto" id=depto">
+                    <select name="depto" id="depto">
                         <option value="Antioquia">Antioquia</option>
                         <option value="Bogota">Bogotá</option>
                         <option value="Caldas">Caldas</option>
@@ -152,7 +152,7 @@
                     <input type="file" class="form-control" id="afiliacion" name="afiliacion"/>
                 </div>
                 <div class="mb-3 mt-3 text-center">
-                    <button type="submit" class="btn-inscribir mb-2" id="btn">Inscribir</button>
+                    <button type="button" class="btn-inscribir mb-2" id="btn">Inscribir</button>
                     <button type="reset" class="btn-cancel mb-2">Cancelar</button>
                 </div>
             </form>
@@ -214,7 +214,7 @@
           />
         </a>
     </div>
-    <script src="../js/formulario.js"></script>
+    <script src="../js/piloto.js"></script>
     <!-- <script src="../js/index.js"></script> -->
 </body>
 </html>

@@ -142,92 +142,10 @@
         </section>
         <!-- En esta sección se mostrará en orden cronológico información de la ciudad y fecha donde estan
         programados las diferentes validas del campeonato -->
-        <section class="p-3">
+        <section class="p-3" id="contenedor_calendar">
             <h2>Programa Validas Campeonato</h2>
-            <div class="row races__calendar">
-                <div class="col-sm-4 col-md-3 col-lg-2 races__calendar-list">
-                  <div class="card etapa bg-dark bg-gradient text-white">
-                    <div class="card-body etapa__city">
-                        <div class="etapa__city-flag">
-                            <img src="./images/alemania.png" class="ale_images"alt="Bandera carrera alemania.">
-                        </div>
-                        <span class="name">España</span>
-                    </div>
-                    <span>
-                        <time>20</time>
-                        <time>Julio</time>
-                    </span>
-                  </div>
-                </div>
-                <div class="col-sm-4 col-md-3 col-lg-2 races__calendar-list">
-                    <div class="card etapa bg-dark bg-gradient text-white">
-                      <div class="card-body etapa__city">
-                          <div class="etapa__city-flag">
-                              <img src="./images/espana.png" class="esp_images"alt="Bandera carrera españa">
-                          </div>
-                          <span class="name">España</span>
-                      </div>
-                      <span>
-                          <time>20</time>
-                          <time>Julio</time>
-                      </span>
-                    </div>
-                </div>
-                <div class="col-sm-4 col-md-3 col-lg-2 races__calendar-list">
-                    <div class="card etapa bg-dark bg-gradient text-white">
-                      <div class="card-body etapa__city">
-                          <div class="etapa__city-flag">
-                              <img src="./images/francia.png" class="fra_images"alt="Bandera carrera francia">
-                          </div>
-                          <span class="name">España</span>
-                      </div>
-                      <span>
-                          <time>20</time>
-                          <time>Julio</time>
-                      </span>
-                    </div>
-                </div>
-                <div class="col-sm-4 col-md-3 col-lg-2 races__calendar-list">
-                    <div class="card etapa bg-dark bg-gradient text-white">
-                      <div class="card-body etapa__city">
-                          <div class="etapa__city-flag">
-                              <img src="./images/alemania.png" class="ale_images"alt="Bandera carrera alemania">
-                          </div>
-                          <span class="name">España</span>
-                      </div>
-                      <span>20</time>
-                          <time>Julio</time>
-                      </span>
-                    </div>
-                </div>
-                <div class="col-sm-4 col-md-3 col-lg-2 races__calendar-list">
-                    <div class="card etapa bg-dark bg-gradient text-white">
-                      <div class="card-body etapa__city">
-                          <div class="etapa__city-flag">
-                              <img src="./images/alemania.png" class="ale_images"alt=" Bandera carrera alemania">
-                          </div>
-                          <span class="name">España</span>
-                      </div>
-                      <span>
-                          <time>20</time>
-                          <time>Julio</time>
-                      </span>
-                    </div>
-                </div>
-                <div class="col-sm-4 col-md-3 col-lg-2 races__calendar-list">
-                    <div class="card etapa bg-dark bg-gradient text-white">
-                      <div class="card-body etapa__city">
-                          <div class="etapa__city-flag">
-                              <img src="./images/alemania.png" class="ale_images"alt="Bandera carrera alemania">
-                          </div>
-                          <span class="name">España</span>
-                      </div>
-                      <span>
-                          <time>20</time>
-                          <time>Julio</time>
-                      </span>
-                    </div>
-                </div>
+            <div class="row races__calendar" id="calendar">
+            </div>
         </section>
         <!-- En esta seccion se incluye noticias de los acontencimientos antes, durante y despues
              de cada etapa, cada información incluye una imágen -->
@@ -365,5 +283,7 @@
           />
         </a>
     </div>
+    <script src="./js/stockCalendar.js"></script>
+    <script src="./js/calendar.js"></script>
 </body>
 </html>
