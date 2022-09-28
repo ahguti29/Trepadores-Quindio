@@ -23,8 +23,8 @@ const mostrarCalendario = (calendar) => {
 
 mostrarCalendario(calendar);
 
-const calendario = (calendar) => {
-	const div = document.getElementById('verCalendar');
+const calendario = () => {
+    const div = document.getElementById('verCalendar');
 	div.innerHTML = `<div class="col-sm-6 col-md-4 col-lg-3">
                         <div class="card etapa bg-dark bg-gradient text-white">
                             <div class="card-body etapa__city">
@@ -39,12 +39,12 @@ const calendario = (calendar) => {
                                     <h3>PRIMERA VALIDA TREPADORES FILANDIA 2022</h3>
                                     </header>
                                     <p> 
-                                        <time>${calendar.day} ${calendar.month}</time>
+                                        <time> ${calendar.day} ${calendar.month}</time>
                                     </p>
                                 </div>
                             </section>
                         </div>`;
 };
 
-document.getElementById('verCalendar').addEventListener('click', calendario);
+document.getElementById('calendar').addEventListener('mousemove', calendario);
 

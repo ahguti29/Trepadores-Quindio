@@ -1,220 +1,369 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>INSCRIPCIONES - FORMULARIO INSCRIPCION AUTOMOVILISMO</title>
-    <meta name="description" content="Diligencia el formulario y participa en el mejor evento de automivilismo deportivo trepadores">
-    <link rel="shortcut icon" href="../images/TQ.jpg"/>
-    <link rel="stylesheet" href="../css/style.css">
-    <!-- Instanciando bootstrap al proyecto -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
-    rel="stylesheet"/>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- iconos de bootstrap -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"/>
-</head>
-<body>
-    <!-- Este es el header de la pagina donde encontramos barra de navegación -->
-    <header class="sticky-top ">
-        <nav class="navbar navbar-expand-lg navbar-dark headerpag">
-          <!-- <nav class="navbar navbar-expand-md bg-red"> -->
-          <div class="container">
-            <a class="navbar-brand" href="../index.html">
-                <img src="../images/tqnegrojpg.jpg" alt="logo trepadores Quindío" width="170" height="60" class="d-inline-block align-text-top">
-            </a>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNav"
-              aria-controls="navbarNav"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <!-- m-auto: centrar el ul -->
-              <!-- ms-auto: alinear a la derecha -->
-              <ul class="navbar-nav ms-auto fw-semibold">
-                <li class="nav-item">
-                  <a class="nav-link" href="../index.html">INICIO</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="../pages/video.html">VIDEOS</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="../pages/stadings.html">RESULTADOS</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../pages/drivers.html">PILOTOS</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../pages/regulation.html">REGLAMENTO</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../pages/registration.html">INSCRIPCIONES</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-    </header>
-    <!-- Aqui ingresamos todo el contenido con la información principal de la página -->
-    <main>
-        <div class="container">
-            <h2 class="text-uppercase">Formulario de Inscripción</h2>
-            <!-- Formulario de inscripcion de los pilotos al campeonato -->
-            <form action="" method="" enctype="" class="row" id="form">
-                <h3 class="text-uppercase">Datos del Piloto</h3>
-                <div class="col-12 rounded border border-secondary border-3 border-opacity-50">
-                    <!-- Aqui se solicitan los datos personales del Piloto -->
-                    <label for="nombre">Ingrese su nombre:</label>
-                    <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre..."/>
-                    
-                    <label for="apellido">Ingrese sus apellidos:</label>
-                    <input type="text" class="form-control" id="apellido" name="apellido" placeholder="Apellidos..."/>
-                    <fieldset class="mb-3">
-                        <legend>Tipo de documento:</legend>
-                        <label class="form-check-label" for="cedula">Cedula de Ciudadania</label>
-                        <input type="radio" id="cedula" name="grupo" value="CC"/>
-                        <label class="form-check-label" for="TI">Tarjeta de Identidad</label>
-                        <input type="radio" id="ti" name="grupo" value="TI"/>
-                    </fieldset>
-                    <label for="numDoc">Numero de documento:</label>
-                    <input type="text" id="numDoc" name="numDoc" minlength="7" maxlength="10" placeholder="Numero de identificación..."/>
-                    <label for="depto">Departamento de Residencia:</label>
-                    <select name="depto" id="depto">
-                        <option value="Antioquia">Antioquia</option>
-                        <option value="Bogota">Bogotá</option>
-                        <option value="Caldas">Caldas</option>
-                        <option value="Cundinamarca">Cundinamarca</option>
-                        <option value="Narino">Nariño</option>
-                        <option value="Quindio">Quindio</option>
-                        <option value="Tolima">Tolima</option>
-                        <option value="Valle">Valle</option>
-                    </select>
-                    
-                    <label for="municipio">Municipio de Residencia:</label>
-                    <input type="text" id="municipio" name="municipio" placeholder="Municipio..."/>
-                    
-                    <label for="eps">EPS:</label>
-                    <input type="text" id="eps" name="eps" placeholder="EPS..."/>
-                </div>
-                <h3 class="text-uppercase">Datos del Vehiculo</h3>
-                <div class="col-12 rounded border border-secondary border-3 border-opacity-50">
-                    <!-- En esta parte se ingresa la información relacionada al Vehiculo -->
-                    <label for="placa">Placa del Vehiculo:</label>
-                    <input type="text" id="placa" name="placa" placeholder="Placa del Vehiculo"/>
-                    <label for="marca">Marca del Vehiculo:</label>
-                    <input type="text" id="marca" name="marca" placeholder="Marca del Vehiculo"/>
-                    <label for="linea">Linea del Vehiculo:</label>
-                    <input type="text" id="linea" name="linea" placeholder="Linea del Vehiculo"/>
-                    <label for="modelo">Modelo del Vehiculo:</label>
-                    <input type="text" id="modelo" name="modelo" placeholder="Modelo del Vehiculo"/>
-                    
-                    <label for="caracteristica">Caracteristica del Vehiculo:</label>
-                    <select name="caracteristica" id="caracteristica">
-                        <option value="Aspirados">Aspirados</option>
-                        <option value="Bogota">Aspirados Modificados</option>
-                        <option value="Caldas">Aspirados Deportivos</option>
-                        <option value="Cundinamarca">Turbo o supercargados</option>
-                        <option value="Narino">Turbo FWD-AWD-RWD</option>
-                        <option value="Quindio">Turbo y aspirados</option>
-                        <option value="Tolima">501 hp o superior</option>
-                    </select>
-                    
-                    <label for="color">Color del Vehiculo:</label>
-                    <input type="text" id="color" name="color" placeholder="Color del Vehiculo"/>
-                    
-                    <label for="cilindrada">Cilindrada (CC):</label>
-                    <input type="text" id="cilindrada" name="cilindrada" placeholder="Cilindrada del Vehiculo..."/>
-                    
-                    <label for="potencia">Potencia (HP):</label>
-                    <input type="text" id="potencia" name="potencia" placeholder="Potencia (HP)"/>
-                    
-                    <label for="consulta">Escriba otras modificaciones del vehiculo: </label>
-                    <textarea name="consulta" id="consulta" cols="40" rows="5" placeholder="Modificaciones del Vehiculo..."></textarea>
-                </div>
-                <h3 class="text-uppercase">Anexo de documentos</h3>
-                <div class="col-xs-6 rounded border border-secondary border-3 border-opacity-50 mb-2 p-4">
-                    <!-- Aqui se anexan los documentos necesarios para la inscripción al campeonato -->
-                    <h3>Documento de Identificación</h3>
-                    <label for="archivo" class="form-label">Adjuntar documento de identificación</label>
-                    <input type="file" class="form-control" id="archivo" name="archivo"/>
-                    <h3>Tarjeta de Propiedad del Vehiculo</h3>
-                    <label for="TP" class="form-label">Adjuntar copia tarjeta de propiedad</label>
-                    <input type="file" class="form-control" id="TP" name="TP"/>
-                    <h3>Certificado Afilición EPS</h3>
-                    <label for="afiliacion" class="form-label">Adjuntar Archivos:</label>
-                    <input type="file" class="form-control" id="afiliacion" name="afiliacion"/>
-                </div>
-                <div class="mb-3 mt-3 text-center">
-                    <button type="button" class="btn-inscribir mb-2" id="btn">Inscribir</button>
-                    <button type="reset" class="btn-cancel mb-2">Cancelar</button>
-                </div>
-            </form>
-        </div>
-    </main>
-    <!-- Este es el footer de la página -->
-    <footer class="footer">
-        <div class="footer__containername h5">
-            <span>Nuestros Patrocinadores</span>
-        </div>
-        <!-- div que contiene los logos de los patrocinadores de todos los eventos. -->
-        <div class="container">
-            <div class="row text-center">
-                <div class="col-6 col-sm-4 col-md-4 col-lg-2 p-2">
-                    <img src="../images/android.png" alt="android patrocinador oficial TQ" />
-                </div>
-                <div class="col-6 col-sm-4 col-md-4 col-lg-2 p-2">
-                    <img src="../images/poderosa.jpg" alt="La poderosa patrocinador oficial TQ" />
-                </div>
-                <div class="col-6 col-sm-4 col-md-4 col-lg-2 p-2">
-                    <img src="../images/apple.png" alt="apple patrocinador oficial TQ" />
-                </div>
-                <div class="col-6 col-sm-4 col-md-4 col-lg-2 p-2">
-                    <img src="../images/android.png" alt="android patrocinador oficial TQ" />
-                </div>
-                <div class="col-6 col-sm-4 col-md-4 col-lg-2 p-2">
-                    <img src="../images/poderosa.jpg" alt="La Poderosa patrocinador oficial TQ" />
-                </div>
-                <div class="col-6 col-sm-4 col-md-4 col-lg-2 p-2">
-                    <img src="../images/apple.png" alt="apple patrocinador oficial TQ" />
-                </div>
-            </div>
-        </div>
-        <!-- Div que contiene el logo y enlace a las cuentas de las redes sociales del Club -->
-        <div class="footer__grid container">
-            <div class="footer_logo">
-                <a href="./index.html"><img src="../images/TQ2.jpg" alt="logo trepadores Quindío" width="134" height="60"/></a>
-            </div>
-            <div class="footer__grid-reserved">
-                <p>
-                    <span>© 2022</span> 
-                    <span>&nbsp; TREPADORES QUINDIO.</span>
-                    <span> &nbsp; ALL RIGHT RESERVED.</span>
-                </p>
-            </div>
-            <div class="footer__grid-rrss">
-                <a href="https://www.youtube.com/channel/UCDyakVdK4IA7JapSPCdR4RA" target="_blank"><i class="bi bi-youtube link-youtube"></i></a>
-                <a href="https://www.instagram.com/trepadoresquindio/" target="_blank"><i class="bi bi-instagram link-instagram"></i></a>
-                <a href="https://www.facebook.com/groups/1426486077574274" target="_blank"><i class="bi bi-facebook link-facebook"></i></a>
-              </div>
-        </div> 
-    </footer>
-    <div class="position-fixed bottom-0 end-0 mb-4 me-5 chat">
-        <a href="https://api.whatsapp.com/send?phone=573232293710" target="_blank"><img
-            src="https://cdn.iconscout.com/icon/free/png-512/whatsapp-circle-1868968-1583132.png"
-            alt="Whatsapp"
-            width="60"
-            height="60"
-          />
-        </a>
-    </div>
-    <script src="../js/piloto.js"></script>
-    <!-- <script src="../js/index.js"></script> -->
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>INSCRIPCIONES - FORMULARIO INSCRIPCION AUTOMOVILISMO</title>
+		<meta
+			name="description"
+			content="Diligencia el formulario y participa en el mejor evento de automivilismo deportivo trepadores"
+		/>
+		<link rel="shortcut icon" href="../images/TQ.jpg" />
+		<link rel="stylesheet" href="../css/style.css" />
+		<!-- Instanciando bootstrap al proyecto -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+		/>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+		<!-- iconos de bootstrap -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"
+		/>
+	</head>
+	<body>
+		<!-- Este es el header de la pagina donde encontramos barra de navegación -->
+		<header class="sticky-top">
+			<nav class="navbar navbar-expand-lg navbar-dark headerpag">
+				<!-- <nav class="navbar navbar-expand-md bg-red"> -->
+				<div class="container">
+					<a class="navbar-brand" href="../index.html">
+						<img
+							src="../images/tqnegrojpg.jpg"
+							alt="logo trepadores Quindío"
+							width="170"
+							height="60"
+							class="d-inline-block align-text-top"
+						/>
+					</a>
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#navbarNav"
+						aria-controls="navbarNav"
+						aria-expanded="false"
+						aria-label="Toggle navigation"
+					>
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarNav">
+						<!-- m-auto: centrar el ul -->
+						<!-- ms-auto: alinear a la derecha -->
+						<ul class="navbar-nav ms-auto fw-semibold">
+							<li class="nav-item">
+								<a class="nav-link" href="../index.html">INICIO</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="../pages/video.html">VIDEOS</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="../pages/stadings.html">RESULTADOS</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="../pages/drivers.html">PILOTOS</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="../pages/regulation.html"
+									>REGLAMENTO</a
+								>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="../pages/registration.html"
+									>INSCRIPCIONES</a
+								>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<!-- Aqui ingresamos todo el contenido con la información principal de la página -->
+		<main>
+			<div class="container">
+				<h2 class="text-uppercase">Formulario de Inscripción</h2>
+				<!-- Formulario de inscripcion de los pilotos al campeonato -->
+				<form action="" method="" enctype="" class="row" id="form">
+					<h3 class="text-uppercase">Datos del Piloto</h3>
+					<div
+						class="col-12 rounded border border-secondary border-3 border-opacity-50"
+					>
+						<!-- Aqui se solicitan los datos personales del Piloto -->
+						<label for="nombre">Ingrese su nombre:</label>
+						<input
+							type="text"
+							class="form-control"
+							id="nombre"
+							name="nombre"
+							placeholder="Nombre..."
+						/>
+
+						<label for="apellido">Ingrese sus apellidos:</label>
+						<input
+							type="text"
+							class="form-control"
+							id="apellido"
+							name="apellido"
+							placeholder="Apellidos..."
+						/>
+						<fieldset class="mb-3">
+							<legend>Tipo de documento:</legend>
+							<label class="form-check-label" for="cedula"
+								>Cedula de Ciudadania</label
+							>
+							<input type="radio" id="cedula" name="grupo" value="CC" />
+							<label class="form-check-label" for="TI"
+								>Tarjeta de Identidad</label
+							>
+							<input type="radio" id="ti" name="grupo" value="TI" />
+						</fieldset>
+						<label for="numDoc">Numero de documento:</label>
+						<input
+							type="text"
+							id="numDoc"
+							name="numDoc"
+							minlength="7"
+							maxlength="10"
+							placeholder="Numero de identificación..."
+						/>
+						<label for="depto">Departamento de Residencia:</label>
+						<select name="depto" id="depto">
+							<option value="Antioquia">Antioquia</option>
+							<option value="Bogota">Bogotá</option>
+							<option value="Caldas">Caldas</option>
+							<option value="Cundinamarca">Cundinamarca</option>
+							<option value="Narino">Nariño</option>
+							<option value="Quindio">Quindio</option>
+							<option value="Tolima">Tolima</option>
+							<option value="Valle">Valle</option>
+						</select>
+
+						<label for="municipio">Municipio de Residencia:</label>
+						<input
+							type="text"
+							id="municipio"
+							name="municipio"
+							placeholder="Municipio..."
+						/>
+
+						<label for="eps">EPS:</label>
+						<input type="text" id="eps" name="eps" placeholder="EPS..." />
+					</div>
+					<h3 class="text-uppercase">Datos del Vehiculo</h3>
+					<div
+						class="col-12 rounded border border-secondary border-3 border-opacity-50"
+					>
+						<!-- En esta parte se ingresa la información relacionada al Vehiculo -->
+						<label for="placa">Placa del Vehiculo:</label>
+						<input
+							type="text"
+							id="placa"
+							name="placa"
+							placeholder="Placa del Vehiculo"
+						/>
+						<label for="marca">Marca del Vehiculo:</label>
+						<input
+							type="text"
+							id="marca"
+							name="marca"
+							placeholder="Marca del Vehiculo"
+						/>
+						<label for="linea">Linea del Vehiculo:</label>
+						<input
+							type="text"
+							id="linea"
+							name="linea"
+							placeholder="Linea del Vehiculo"
+						/>
+						<label for="modelo">Modelo del Vehiculo:</label>
+						<input
+							type="text"
+							id="modelo"
+							name="modelo"
+							placeholder="Modelo del Vehiculo"
+						/>
+
+						<label for="caracteristica">Caracteristica del Vehiculo:</label>
+						<select name="caracteristica" id="caracteristica">
+							<option value="Aspirados">Aspirados</option>
+							<option value="Bogota">Aspirados Modificados</option>
+							<option value="Caldas">Aspirados Deportivos</option>
+							<option value="Cundinamarca">Turbo o supercargados</option>
+							<option value="Narino">Turbo FWD-AWD-RWD</option>
+							<option value="Quindio">Turbo y aspirados</option>
+							<option value="Tolima">501 hp o superior</option>
+						</select>
+
+						<label for="color">Color del Vehiculo:</label>
+						<input
+							type="text"
+							id="color"
+							name="color"
+							placeholder="Color del Vehiculo"
+						/>
+
+						<label for="cilindrada">Cilindrada (CC):</label>
+						<input
+							type="text"
+							id="cilindrada"
+							name="cilindrada"
+							placeholder="Cilindrada del Vehiculo..."
+						/>
+
+						<label for="potencia">Potencia (HP):</label>
+						<input
+							type="text"
+							id="potencia"
+							name="potencia"
+							placeholder="Potencia (HP)"
+						/>
+
+						<label for="consulta"
+							>Escriba otras modificaciones del vehiculo:
+						</label>
+						<textarea
+							name="consulta"
+							id="consulta"
+							cols="40"
+							rows="5"
+							placeholder="Modificaciones del Vehiculo..."
+						></textarea>
+					</div>
+					<h3 class="text-uppercase">Anexo de documentos</h3>
+					<div
+						class="col-xs-6 rounded border border-secondary border-3 border-opacity-50 mb-2 p-4"
+					>
+						<!-- Aqui se anexan los documentos necesarios para la inscripción al campeonato -->
+						<h3>Documento de Identificación</h3>
+						<label for="archivo" class="form-label"
+							>Adjuntar documento de identificación</label
+						>
+						<input
+							type="file"
+							class="form-control"
+							id="archivo"
+							name="archivo"
+						/>
+						<h3>Tarjeta de Propiedad del Vehiculo</h3>
+						<label for="TP" class="form-label"
+							>Adjuntar copia tarjeta de propiedad</label
+						>
+						<input type="file" class="form-control" id="TP" name="TP" />
+						<h3>Certificado Afilición EPS</h3>
+						<label for="afiliacion" class="form-label"
+							>Adjuntar Archivos:</label
+						>
+						<input
+							type="file"
+							class="form-control"
+							id="afiliacion"
+							name="afiliacion"
+						/>
+					</div>
+					<div class="mb-3 mt-3 text-center">
+						<button type="button" class="btn-inscribir mb-2" id="btn">
+							Inscribir
+						</button>
+						<button type="reset" class="btn-cancel mb-2">Cancelar</button>
+					</div>
+				</form>
+			</div>
+		</main>
+		<!-- Este es el footer de la página -->
+		<footer class="footer">
+			<div class="footer__containername h5">
+				<span>Nuestros Patrocinadores</span>
+			</div>
+			<!-- div que contiene los logos de los patrocinadores de todos los eventos. -->
+			<div class="container">
+				<div class="row text-center">
+					<div class="col-6 col-sm-4 col-md-4 col-lg-2 p-2">
+						<img
+							src="../images/android.png"
+							alt="android patrocinador oficial TQ"
+						/>
+					</div>
+					<div class="col-6 col-sm-4 col-md-4 col-lg-2 p-2">
+						<img
+							src="../images/poderosa.jpg"
+							alt="La poderosa patrocinador oficial TQ"
+						/>
+					</div>
+					<div class="col-6 col-sm-4 col-md-4 col-lg-2 p-2">
+						<img
+							src="../images/apple.png"
+							alt="apple patrocinador oficial TQ"
+						/>
+					</div>
+					<div class="col-6 col-sm-4 col-md-4 col-lg-2 p-2">
+						<img
+							src="../images/android.png"
+							alt="android patrocinador oficial TQ"
+						/>
+					</div>
+					<div class="col-6 col-sm-4 col-md-4 col-lg-2 p-2">
+						<img
+							src="../images/poderosa.jpg"
+							alt="La Poderosa patrocinador oficial TQ"
+						/>
+					</div>
+					<div class="col-6 col-sm-4 col-md-4 col-lg-2 p-2">
+						<img
+							src="../images/apple.png"
+							alt="apple patrocinador oficial TQ"
+						/>
+					</div>
+				</div>
+			</div>
+			<!-- Div que contiene el logo y enlace a las cuentas de las redes sociales del Club -->
+			<div class="footer__grid container">
+				<div class="footer_logo">
+					<a href="./index.html"
+						><img
+							src="../images/TQ2.jpg"
+							alt="logo trepadores Quindío"
+							width="134"
+							height="60"
+					/></a>
+				</div>
+				<div class="footer__grid-reserved">
+					<p>
+						<span>© 2022</span>
+						<span>&nbsp; TREPADORES QUINDIO.</span>
+						<span> &nbsp; ALL RIGHT RESERVED.</span>
+					</p>
+				</div>
+				<div class="footer__grid-rrss">
+					<a
+						href="https://www.youtube.com/channel/UCDyakVdK4IA7JapSPCdR4RA"
+						target="_blank"
+						><i class="bi bi-youtube link-youtube"></i
+					></a>
+					<a href="https://www.instagram.com/trepadoresquindio/" target="_blank"
+						><i class="bi bi-instagram link-instagram"></i
+					></a>
+					<a
+						href="https://www.facebook.com/groups/1426486077574274"
+						target="_blank"
+						><i class="bi bi-facebook link-facebook"></i
+					></a>
+				</div>
+			</div>
+		</footer>
+		<div class="position-fixed bottom-0 end-0 mb-4 me-5 chat">
+			<a href="https://api.whatsapp.com/send?phone=573232293710" target="_blank"
+				><img
+					src="https://cdn.iconscout.com/icon/free/png-512/whatsapp-circle-1868968-1583132.png"
+					alt="Whatsapp"
+					width="60"
+					height="60"
+				/>
+			</a>
+		</div>
+		<script src="../js/piloto.js"></script>
+		<script src="../js/carro.js"></script>
+		<!-- <script src="../js/index.js"></script> -->
+	</body>
 </html>

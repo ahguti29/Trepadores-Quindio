@@ -10,7 +10,7 @@ class piloto {
     }
 }
 const pilot = [];
-function obtenerDatosFormulario(){
+function obtenerDatosPiloto(){
     let nombre = document.getElementById("nombre").value;
     let apellido = document.getElementById("apellido").value;
     let tipoDocumento = "";
@@ -23,12 +23,14 @@ function obtenerDatosFormulario(){
     
     cedula.checked ? tipoDocumento = cedula.value : tipoDocumento = ti.value;
 
+    
     pilot.push(new piloto(nombre, apellido, tipoDocumento, numDocumento, departamento, municipio, eps));
-    localStorage.setItem("objeto",JSON.stringify(pilot));
+    localStorage.setItem("piloto",JSON.stringify(pilot));
 }
 
 document.getElementById("btn").addEventListener('click',()=>{
-    obtenerDatosFormulario();
+    obtenerDatosPiloto();
+    obtenerDatosCarro();
     alert('Se completo el registro');
     document.getElementById("form").reset();
 })
