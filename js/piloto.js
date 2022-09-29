@@ -31,6 +31,22 @@ function obtenerDatosPiloto(){
 document.getElementById("btn").addEventListener('click',()=>{
     obtenerDatosPiloto();
     obtenerDatosCarro();
-    alert('Se completo el registro');
+    Swal.fire({
+        title: '¿Los datos son correctos?',
+        text: "No podras modificar los datos!",
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Si, acepto!'
+      }).then((result) => {
+        if (result.isConfirmed) {
+          Swal.fire(
+            'Completo!',
+            'Estas registrado.',
+            'success'
+          )
+        }
+      })
     document.getElementById("form").reset();
 })

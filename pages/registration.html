@@ -22,6 +22,7 @@
 			rel="stylesheet"
 			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"
 		/>
+		<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 	</head>
 	<body>
 		<!-- Este es el header de la pagina donde encontramos barra de navegación -->
@@ -127,6 +128,14 @@
 							minlength="7"
 							maxlength="10"
 							placeholder="Numero de identificación..."
+						/>
+						<label for="apellido">Ingrese su email:</label>
+						<input
+							type="email"
+							class="form-control"
+							id="email"
+							name="email"
+							placeholder="Email..."
 						/>
 						<label for="depto">Departamento de Residencia:</label>
 						<select name="depto" id="depto">
@@ -352,7 +361,7 @@
 				</div>
 			</div>
 		</footer>
-		<div class="position-fixed bottom-0 end-0 mb-4 me-5 chat">
+		<div class="position-fixed bottom-0 end-0 mb-4 me-5 chat" id="wtsp" >
 			<a href="https://api.whatsapp.com/send?phone=573232293710" target="_blank"
 				><img
 					src="https://cdn.iconscout.com/icon/free/png-512/whatsapp-circle-1868968-1583132.png"
@@ -364,6 +373,7 @@
 		</div>
 		<script src="../js/piloto.js"></script>
 		<script src="../js/carro.js"></script>
+		
 		<!-- <script src="../js/index.js"></script> -->
 	</body>
 </html>

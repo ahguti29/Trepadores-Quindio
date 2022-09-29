@@ -23,15 +23,15 @@ const mostrarCalendario = (calendar) => {
 
 mostrarCalendario(calendar);
 
-const calendario = () => {
+const calendario = (evento) => {
     const div = document.getElementById('verCalendar');
 	div.innerHTML = `<div class="col-sm-6 col-md-4 col-lg-3">
                         <div class="card etapa bg-dark bg-gradient text-white">
                             <div class="card-body etapa__city">
                                 <div class="etapa__city-flag">
-                                    <img src="${calendar.flag}" class="ale_images"alt="Bandera carrera alemania.">
+                                    <img src="${evento.flag}" class="ale_images"alt="Bandera carrera alemania.">
                                 </div>
-                                <span class="name">${calendar.city}</span>
+                                <span class="name">${evento.city}</span>
                             </div>
                             <section> 
                                 <div> 
@@ -39,12 +39,12 @@ const calendario = () => {
                                     <h3>PRIMERA VALIDA TREPADORES FILANDIA 2022</h3>
                                     </header>
                                     <p> 
-                                        <time> ${calendar.day} ${calendar.month}</time>
+                                        <time> ${evento.day} ${evento.month}</time>
                                     </p>
                                 </div>
                             </section>
                         </div>`;
 };
 
-document.getElementById('calendar').addEventListener('mousemove', calendario);
+document.getElementById('calendar').addEventListener('click', calendario);
 
