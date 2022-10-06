@@ -1,44 +1,44 @@
-const calendar = [
-    {
+const information = [
+	{
 		id: 1,
 		flag: './images/alemania.png',
 		city: 'Alemania',
 		day: '20',
-        month: 'Julio',
+		month: 'Julio',
 	},
-    {
+	{
 		id: 2,
 		flag: './images/espana.png',
 		city: 'España',
 		day: '25',
-        month: 'Agosto',
+		month: 'Agosto',
 	},
-    {
+	{
 		id: 3,
 		flag: './images/francia.png',
 		city: 'Francia',
 		day: '25',
-        month: 'Septiembre',
+		month: 'Septiembre',
 	},
-    {
+	{
 		id: 4,
 		flag: './images/espana.png',
 		city: 'España',
 		day: '25',
-        month: 'Octubre',
+		month: 'Octubre',
 	},
-    {
+	{
 		id: 5,
 		flag: './images/alemania.png',
 		city: 'Alemania',
 		day: '25',
-        month: 'Noviembre'
-    },
-    {
+		month: 'Noviembre',
+	},
+	{
 		id: 6,
 		flag: './images/francia.png',
 		city: 'Francia',
-		day: '25',
-        month: 'diciembre',
+		day: '28',
+		month: 'diciembre',
 	},
-]
+];
