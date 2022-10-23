@@ -197,12 +197,13 @@
 						<label for="caracteristica">Caracteristica del Vehiculo:</label>
 						<select name="caracteristica" id="caracteristica">
 							<option value="Aspirados">Aspirados</option>
-							<option value="Bogota">Aspirados Modificados</option>
-							<option value="Caldas">Aspirados Deportivos</option>
-							<option value="Cundinamarca">Turbo o supercargados</option>
-							<option value="Narino">Turbo FWD-AWD-RWD</option>
-							<option value="Quindio">Turbo y aspirados</option>
-							<option value="Tolima">501 hp o superior</option>
+							<option value="Aspirados Modificados">Aspirados Modificados</option>
+							<option value="Aspirados Deportivos">Aspirados Deportivos</option>
+							<option value="Turbo o supercargados">Turbo o supercargados</option>
+							<option value="Turbo Stock">Turbo Stock</option>
+							<option value="Turbo FWD-AWD-RWD">Turbo FWD-AWD-RWD</option>
+							<option value="Turbo y aspirados">Turbo y aspirados</option>
+							<option value="501 hp o superior">501 hp o superior</option>
 						</select>
 
 						<label for="color">Color del Vehiculo:</label>
@@ -229,6 +230,19 @@
 							placeholder="Potencia (HP)"
 						/>
 
+						<label for="categoria">Categoría:</label>
+						<input
+							type="text"
+							id="categoria"
+							name="categoria"
+							placeholder="Ingrese categoria"
+						/>
+						<div class="mb-3 mt-3 text-center">
+							<button type="button" class="btn-inscribir mb-2" id="btn_cat">
+								Calcular Categoria
+							
+						</div>
+
 						<label for="consulta"
 							>Escriba otras modificaciones del vehiculo:
 						</label>
@@ -240,12 +254,12 @@
 							placeholder="Modificaciones del Vehiculo..."
 						></textarea>
 					</div>
-					<h3 class="text-uppercase">Anexo de documentos</h3>
+					<!-- <h3 class="text-uppercase">Anexo de documentos</h3>
 					<div
 						class="col-xs-6 rounded border border-secondary border-3 border-opacity-50 mb-2 p-4"
-					>
+					> -->
 						<!-- Aqui se anexan los documentos necesarios para la inscripción al campeonato -->
-						<h3>Documento de Identificación</h3>
+						<!-- <h3>Documento de Identificación</h3>
 						<label for="archivo" class="form-label"
 							>Adjuntar documento de identificación</label
 						>
@@ -270,7 +284,7 @@
 							id="afiliacion"
 							name="afiliacion"
 						/>
-					</div>
+					</div> -->
 					<div class="mb-3 mt-3 text-center">
 						<button type="button" class="btn-inscribir mb-2" id="btn">
 							Inscribir
