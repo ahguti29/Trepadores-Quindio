@@ -22,25 +22,29 @@ fetch("./json/calendar.json")
 
 
 document.getElementById('calendar').addEventListener('click', (e) => {
-    console.log(e);
+  /*console.log(e); */
     document.getElementById('newInfo').removeAttribute('hidden');
     const div = document.getElementById('newInfo');
-    div.innerHTML = `<div class="col-sm-6 col-md-4 col-lg-3">
-    <div class="card etapa bg-dark bg-gradient text-white">
-        <div class="card-body etapa__city">
+    div.innerHTML = `<div class="col-sm-6 col-md-4 col-lg-3 w-auto">
+    <div class="card etapa bg-dark bg-gradient text-white information">
+        <div class="card-body etapa_inf">
             <div class="etapa__city-flag" style="cursor: pointer">
                 <img src="./images/francia.png" class="ale_images"alt="Bandera carrera alemania.">
             </div>
-            <span class="name">${e.target.id}</span>
+            <span class="">${e.target.id}</span>
+            <h3>PRIMERA VALIDA TREPADORES FILANDIA 2022</h3>
+            <span>
+                <time>19 Julio</time> -
+                <time>20 Julio</time>
+            </span>
         </div>
         <section> 
-            <div> 
+            <div class="details"> 
                 <header> 
-                <h3>PRIMERA VALIDA TREPADORES FILANDIA 2022</h3>
+               <img src="./images/Motul_logo.svg.png">
                 </header>
-                <p> 
-                    <input type= "text">
-                </p>
+                <div class="details_race">REVISIÓN TÉCNICA</div>
+                <div class="details_race">CARRERA</div>
             </div>
         </section>
     </div>`;

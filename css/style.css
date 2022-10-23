@@ -202,6 +202,38 @@ tr {
     border-radius: 10px;
     margin-bottom: 20px; }
 
+.information {
+  display: flex;
+  margin: auto;
+  padding-top: 5px;
+  height: 450px;
+  width: 45rem;
+  align-items: center;
+  align-content: center; }
+  .information_etapa {
+    height: 200px;
+    width: auto;
+    border-radius: 15px; }
+
+.etapa_inf {
+  width: auto; }
+
+.details img {
+  border: solid 1px #353535;
+  border-radius: 10px; }
+
+.details_race {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', sans-serif;
+  margin-top: 20px;
+  border: solid 2px #353535;
+  border-radius: 15px;
+  width: 45%;
+  text-align: start;
+  align-items: center;
+  padding: 4px;
+  background-color: #353535;
+  text-transform: uppercase; }
+
 .banner {
   width: 95%;
   margin: auto;
@@ -281,6 +313,38 @@ tr {
     width: 100%;
     border-radius: 10px;
     margin-bottom: 20px; }
+
+.information {
+  display: flex;
+  margin: auto;
+  padding-top: 5px;
+  height: 450px;
+  width: 45rem;
+  align-items: center;
+  align-content: center; }
+  .information_etapa {
+    height: 200px;
+    width: auto;
+    border-radius: 15px; }
+
+.etapa_inf {
+  width: auto; }
+
+.details img {
+  border: solid 1px #353535;
+  border-radius: 10px; }
+
+.details_race {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', sans-serif;
+  margin-top: 20px;
+  border: solid 2px #353535;
+  border-radius: 15px;
+  width: 45%;
+  text-align: start;
+  align-items: center;
+  padding: 4px;
+  background-color: #353535;
+  text-transform: uppercase; }
 
 .card-video {
   background-color: #fff;

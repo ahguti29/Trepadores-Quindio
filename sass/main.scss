@@ -1,112 +1,157 @@
+.banner {
+	width: 95%;
+	margin: auto;
+	overflow: hidden;
+	padding-top: 2rem;
 
+	ul {
+		display: flex;
+		padding: 0;
+		width: 400%;
+		animation: cambio 20s infinite alternate linear;
+	}
 
-.banner{
-    width: 95%;
-    margin: auto;
-    overflow: hidden;
-    padding-top: 2rem;
+	li {
+		width: 100%;
+		list-style: none;
+	}
 
-    ul{
-        display: flex;
-        padding: 0;
-        width: 400%;
-        animation: cambio 20s infinite alternate linear;
-    }
-
-    li{
-        width: 100%;
-        list-style: none; 
-    }
-
-    img{
-        width: 100%;
-    }
+	img {
+		width: 100%;
+	}
 }
 
 @keyframes cambio {
-    0%{margin-left: 0;}
-    20%{margin-left: 0;}
+	0% {
+		margin-left: 0;
+	}
+	20% {
+		margin-left: 0;
+	}
 
-    25%{margin-left: -100%;}
-    45%{margin-left: -100%;}
+	25% {
+		margin-left: -100%;
+	}
+	45% {
+		margin-left: -100%;
+	}
 
-    50%{margin-left: -200%;}
-    70%{margin-left: -200%;}
+	50% {
+		margin-left: -200%;
+	}
+	70% {
+		margin-left: -200%;
+	}
 
-    75%{margin-left: -300%;}
-    100%{margin-left: -300%;}
-    }
-
-.races__calendar{
-    background-color: #272626;
-    color: white;
-    height: 100%;
-    padding: 5px;
-
-    &-list{
-        align-items: center;
-        justify-items: center;
-        color: #353535;
-        }
-}
-    
-.etapa{
-    text-align: center;
-    width: 200px;
-
-    &__city{
-        align-items: center;
-        justify-items: center;
-
-        &-flag{
-            img{
-                display: block;
-                height: 52px;
-                width: 68px;
-                margin: 0 auto 20px;
-                align-items: center;
-                justify-items: center;
-            }
-        }
-    }
+	75% {
+		margin-left: -300%;
+	}
+	100% {
+		margin-left: -300%;
+	}
 }
 
-.news__notices{
-    border-top-right-radius: 25px;
-    border-bottom-right-radius: 25px;
-    padding-top: 20px;
-    padding-right: 20px;
-    border-top: solid 10px $colorBordes;
-    border-right: solid 10px $colorBordes;
-  }
-  
-  // Aplicando el mixin para las tarjetas a utilizar en diferentes páginas
+.races__calendar {
+	background-color: #272626;
+	color: white;
+	height: 100%;
+	padding: 5px;
+
+	&-list {
+		align-items: center;
+		justify-items: center;
+		color: #353535;
+	}
+}
+
+.etapa {
+	text-align: center;
+	width: 200px;
+
+	&__city {
+		align-items: center;
+		justify-items: center;
+
+		&-flag {
+			img {
+				display: block;
+				height: 52px;
+				width: 68px;
+				margin: 0 auto 20px;
+				align-items: center;
+				justify-items: center;
+			}
+		}
+	}
+}
+
+.news__notices {
+	border-top-right-radius: 25px;
+	border-bottom-right-radius: 25px;
+	padding-top: 20px;
+	padding-right: 20px;
+	border-top: solid 10px $colorBordes;
+	border-right: solid 10px $colorBordes;
+}
+
+// Aplicando el mixin para las tarjetas a utilizar en diferentes páginas
 @mixin card-model {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);    
+	background-color: #fff;
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
 
-    iframe{
-        width: 100%;
-        border-radius: 10px;
-        margin-bottom: 20px;
-        }
+	iframe {
+		width: 100%;
+		border-radius: 10px;
+		margin-bottom: 20px;
+	}
 }
 
 .card-main {
-   @include card-model();
+	@include card-model();
 
-    img{
-        width: 100%;
-        border-radius: 10px;
-        margin-bottom: 20px;
-    }
-  }
+	img {
+		width: 100%;
+		border-radius: 10px;
+		margin-bottom: 20px;
+	}
+}
 
- 
+.information {
+	display: flex;
+	margin: auto;
+	padding-top: 5px;
+	height: 450px;
+	width: 45rem;
+	align-items: center;
+	align-content: center;
+	&_etapa {
+		height: 200px;
+		width: auto;
+		border-radius: 15px;
+	}
+}
 
+.etapa_inf{
+	width: auto;
+}
 
-
-    
-    
+.details{
+	img{
+    	border: solid 1px #353535;
+    	border-radius: 10px;
+	}
+	&_race{
+		font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', sans-serif;
+		margin-top: 20px;
+    	border: solid 2px #353535;
+    	border-radius: 15px;
+    	width: 45%;
+		text-align: start;
+		align-items: center;
+		padding: 4px;
+		background-color: #353535;
+		text-transform: uppercase;
+	}
+}

@@ -1,6 +1,5 @@
 const mostrarVideos = (videos) => {
     const contenedorVideos = document.getElementById("contenedor_video")
-
     videos.forEach(video => {
         const div = document.getElementById("vid");
         div.innerHTML += `<div class="col-sm-12 col-md-6 col-lg-4 pt-3 pb-3">
@@ -19,3 +18,4 @@ const mostrarVideos = (videos) => {
 
 
 mostrarVideos(videos);
+
