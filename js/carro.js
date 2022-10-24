@@ -1,4 +1,5 @@
 class carro {
+	/* Constructor de la clase carro */
 	constructor(placa, marca, linea, modelo, caracteristica, color, cilindrada, potencia) {
 		this.placa = placa;
 		this.marca = marca;
@@ -10,8 +11,12 @@ class carro {
 		this.potencia = potencia;
 	}
 }
+/* Array que permite almacenar los carros inscritos */
 const car = [];
 let boton = document.getElementById("btn_cat");
+
+/* Funcion que obtiene los datos ingresados en el formulario, crea un registro de carro, 
+lo agrega al array y queda almacenado en el localStorage */
 function obtenerDatosCarro(){
 	let placa = document.getElementById("placa").value;
 	let marca = document.getElementById("marca").value;
@@ -25,13 +30,12 @@ function obtenerDatosCarro(){
 	car.push(new carro( placa, marca, linea, modelo, caracteristica, color, cilindrada, potencia));
 	localStorage.setItem('carro', JSON.stringify(car));
 }
-/* document.getElementById("btn").addEventListener('click',()=>{
-    obtenerDatosCarro();
-}) */
 
+/* Arrow function que permite ubicar el carro e informar al usuario la categoria correspondiente
+en la que debe estar inscrito teniendo en cuenta 3 datos ingresados por el usuario en el formulario
+que son caracteristica, cilindrada y potencia.*/
 const categoriaCarro = (caracteristica, cilindrada, potencia) => { 
-    /* De acuerdo a la caracteristica ingresada por el usuario evalua cada uno de los valores y de acuerdo  a
-	las  decisiones de cada caso ubica al vehiculo en la categoria que corresponda.*/
+
 	switch (caracteristica) {
 		case 'Aspirados':
 			if (cilindrada <= 1400) {
@@ -143,11 +147,10 @@ const categoriaCarro = (caracteristica, cilindrada, potencia) => {
 							icon: 'error'}); */
 			break;
 	}
-
-	/* alert('Su registro fue exitoso'); */
 	return;
 }; 
 
+/* Codigo que asigna el evento al boton para calcular la categoria */
 boton.addEventListener("click", () => {
 	obtenerDatosCarro();
 	categoriaCarro(caracteristica.value, cilindrada.value, potencia.value);});

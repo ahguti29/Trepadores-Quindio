@@ -227,8 +227,8 @@ tr {
   margin-top: 20px;
   border: solid 2px #353535;
   border-radius: 15px;
-  width: 45%;
-  text-align: start;
+  width: auto;
+  text-align: center;
   align-items: center;
   padding: 4px;
   background-color: #353535;
@@ -339,8 +339,8 @@ tr {
   margin-top: 20px;
   border: solid 2px #353535;
   border-radius: 15px;
-  width: 45%;
-  text-align: start;
+  width: auto;
+  text-align: center;
   align-items: center;
   padding: 4px;
   background-color: #353535;

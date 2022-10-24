@@ -1,4 +1,6 @@
 class piloto {
+
+  /* Metodo Constructor de la clase piloto */
     constructor(nombre, apellido, tipoDocumento, numDocumento, departamento, municipio, eps){
         this.nombre = nombre;
         this.apellido = apellido;
@@ -9,7 +11,12 @@ class piloto {
         this.eps = eps;
     }
 }
+/* Array que almacena los pilotos inscritos */
 const pilot = [];
+let btn = document.getElementById("btn");
+
+/* Funcion que obtiene los datos ingresados en el formulario, crea el registro de un piloto, 
+lo agrega al array y queda almacenado en el localStorage */
 function obtenerDatosPiloto(){
     let nombre = document.getElementById("nombre").value;
     let apellido = document.getElementById("apellido").value;
@@ -28,9 +35,11 @@ function obtenerDatosPiloto(){
     localStorage.setItem("piloto",JSON.stringify(pilot));
 }
 
-document.getElementById("btn").addEventListener('click',()=>{
-    obtenerDatosPiloto();
-    obtenerDatosCarro();
+/* Código para asignar las funciones al boton inscribir haciendo uso del evento click,
+se obtienen todos los datos del formulario y se almacenan en los array y en el localStorage*/
+btn.addEventListener('click',() => {
+  obtenerDatosPiloto();
+  obtenerDatosCarro();
     Swal.fire({
         title: '¿Los datos son correctos?',
         text: "No podras modificar los datos!",
@@ -49,22 +58,5 @@ document.getElementById("btn").addEventListener('click',()=>{
         }
       })
     document.getElementById("form").reset();
-})
+});
 
-const mostrarPilotos = (videos) => {
-  const contenedorVideos = document.getElementById("contenedor_video")
-  videos.forEach(video => {
-      const div = document.getElementById("vid");
-      div.innerHTML += `<div class="col-sm-12 col-md-6 col-lg-4 pt-3 pb-3">
-                          <article class="card-video effect">
-                          <iframe src="${video.link}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                              <div class="card-body">
-                              <h5 class="card-title fw-bold">${video.title}</h5>
-                              <p class="card-text my-4">${video.text}</p>
-                              </div>
-                          </article>
-                      </div>`
-
-      contenedorVideos.appendChild(div)
-  })
-}

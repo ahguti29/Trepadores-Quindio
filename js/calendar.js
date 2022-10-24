@@ -1,3 +1,5 @@
+/* Código que permite modificar el DOM del index.html obteniendo la información desde el archivo
+calendar.json que contiene la información de todas las validas del campeonato*/
 fetch("./json/calendar.json")
 .then(response => response.json())
 .then(calendar => {
@@ -20,9 +22,9 @@ fetch("./json/calendar.json")
     });
 })
 
-
+/* Codigo que permite modificar el DOM mediante el evento click. Crear un nuevo div con la información
+sobre el evento seleccionado*/
 document.getElementById('calendar').addEventListener('click', (e) => {
-  /*console.log(e); */
     document.getElementById('newInfo').removeAttribute('hidden');
     const div = document.getElementById('newInfo');
     div.innerHTML = `<div class="col-sm-6 col-md-4 col-lg-3 w-auto">
@@ -43,8 +45,8 @@ document.getElementById('calendar').addEventListener('click', (e) => {
                 <header> 
                <img src="./images/Motul_logo.svg.png">
                 </header>
-                <div class="details_race">REVISIÓN TÉCNICA</div>
-                <div class="details_race">CARRERA</div>
+                <div class="details_race">REVISIÓN TÉCNICA: 19 de Julio</div>
+                <div class="details_race">CARRERA: 20 de Julio</div>
             </div>
         </section>
     </div>`;
